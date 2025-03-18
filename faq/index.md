@@ -33,7 +33,7 @@ git clone https://github.com/YOUR_GITHUB_ACCOUNT/YOUR_GITHUB_REPO
     
 Push the changes to your forked repository:
 ```bash
-git push origin main
+git push
 ```
 
 
