@@ -3,7 +3,7 @@ title: Frequently Asked Questions
 ---
 
 
-How to edit data or create a "homebrew" for NR?:
+# How can i edit data or create a "homebrew" for NR?:
 
 You will need to: 
 -  Install the Data Editor (link)
@@ -37,7 +37,7 @@ git push origin main
 ```
 
 
-How do i add that data in NR?
+# How do i add that data in NR?
 1. Go on the page with the list of systems
 2. Click "Add more mames"
 3. Click "Add from Github"
