@@ -39,8 +39,8 @@ git push origin main
 
 # How do i add that data in NR?
 1. Go on the page with the list of systems
-2. Click "Add more mames"
+2. Click "Add more games"
 3. Click "Add from Github"
 4. Select "Latest Commit"
-5. Paste you github repository url in the input box
+5. Paste the github repository url in the input box
 6. Click on the green +
