@@ -12,8 +12,7 @@ You will need to:
 -  Have a github account
 
 Steps:
-  1. If wanking to edit existing data or making a homebrew:
-      Go to the source data repository and fork it.
+  1.  Go to the source data repository and fork it. if you dont know the url, you can find a link to it in the info for that system in NR.
 
   2.  Open a terminal in the location you want your data to be and enter
 ```bash
