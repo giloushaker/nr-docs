@@ -22,17 +22,13 @@ git clone https://github.com/YOUR_GITHUB_ACCOUNT/YOUR_GITHUB_REPO
 
   5. You may then edit the system, if you need help with that, you can go (link)
 
-  6. Once you are done editing the system and want to publish your changes, open a terminal at the location of your system and:
+  6. Once you are done editing the system and want to publish your changes, either upload the modified files to your github repository or open a terminal at the location of your system and:
 
      Stage and commit your changes:
 ```bash
  git add .
  git commit -m "Your commit message"
-```
-    
-Push the changes to your forked repository:
-```bash
-git push
+ git push
 ```
 
 
