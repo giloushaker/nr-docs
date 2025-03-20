@@ -8,7 +8,7 @@ tags: [guides]
    Open the [NR Data Editor](https://github.com/giloushaker/nr-editor/releases)  
    Select `Create System`, enter a name and select it. you should end up on a page that looks like this:
 ## 2. Add Factions
-   Create a new catalogue for each faction that is available in your game, these will be available as a choice in this selector:
+   Create a new catalogue for each faction that is available in your game, these will end up being available as a choice in this selector:
 ## 3. Add Forces
    Open the game system, which is the file which has two cogs as an icon  
    `Force Entries` should contain an entry named "Default Force", if it doesn't, right click on `Force Entries` and select `Force` to create one.
