@@ -76,10 +76,7 @@ A few operations that make editing faster:
   Entries (see above).
 - **Ctrl+click** to select multiple nodes, then copy, paste, or move them
   together.
-- Entries are sorted alphabetically by default. To arrange a group's children in
-  a deliberate order, turn on **No Sorting** for the group, then right-click a
-  child and move it up or down. Some nodes can be re-ordered by right-click
-  regardless of the sort setting.
+- To control the order entries appear in, see [Sorting](/guide/advanced/sorting).
 
 ## Leave TODOs and warnings in the data
 

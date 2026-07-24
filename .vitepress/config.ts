@@ -69,6 +69,7 @@ export default defineConfig({
         {
           text: "Advanced",
           items: [
+            { text: "Sorting", link: "/guide/advanced/sorting" },
             { text: "Editor Scripts", link: "/guide/advanced/scripts" },
             {
               text: "Custom Export Templates",
