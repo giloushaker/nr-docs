@@ -38,9 +38,11 @@ that category become available as choices within that force.
 Right click `Root Selection Entries` and select `Entry` to add a unit.
 
 Many systems define the unit under `Shared Selection Entries` and then add a link
-to it under `Root Selection Entries`, so the same unit can be reused. For a first
-system you can create it directly in root; see
-[Links & Shared Entries](/guide/concepts/links) for why sharing helps later.
+to it under `Root Selection Entries`, so the same unit can be reused. There is a
+shortcut: right-click a node and choose **Move To**. Moving an entry from Root
+into Shared Selection Entries leaves a link behind for you. For a first system you
+can create it directly in root; see [Links & Shared Entries](/guide/concepts/links)
+for why sharing helps later.
 
 ## 7. Set the unit's primary category
 
@@ -99,9 +101,12 @@ Profiles are the stat blocks. They need a profile type first. In the game system
 under `Profile Types`, create one (for example "Unit") and add its characteristics
 (Move, Save, and so on).
 
-Then add a profile of that type to the unit, or to a weapon, and fill in the
-characteristics. A profile belongs on the entry it describes: a weapon's profile
-on the weapon, a unit's profile on the unit.
+Then add a profile of that type to the entry it describes and fill in the
+characteristics. Put the stat line on the **model**, not the unit: where a unit
+has model entries, each model carries its own stats, even though the profile type
+is often named "Unit". A weapon's profile goes on the weapon. A profile sits
+directly on the unit only when the unit has no separate model entries beneath it.
+See [Put each profile on the entry it describes](/guide/best-practices#put-each-profile-on-the-entry-it-describes).
 
 ## 13. Test it in the builder
 
@@ -112,8 +117,9 @@ folder** to point the website at your working folder. It hot-reloads as you save
 so you can edit in the data editor and see the build update without committing or
 re-importing. Firefox and Safari do not support this.
 
-Otherwise, publish to GitHub and load it with **Add from Github**; see
-[Publishing Your Data](/guide/publishing).
+The desktop builder also loads a local folder and hot-reloads. It is not tested on
+Linux or macOS, and it often lags behind the website version, so prefer the
+website loop where you can.
 
 If a unit doesn't show up, work through the
 [Troubleshooting](/guide/troubleshooting#my-unit-doesnt-appear-in-the-builder)

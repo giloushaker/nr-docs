@@ -6,6 +6,12 @@ game system.
 
 In the builder, press **Y** to open the export popup and edit the template.
 
+::: info
+How templates are authored may change down the line, with an eye toward making
+them easier to edit and share. The approach described here works today; keep that
+in mind if you invest heavily in a complex template.
+:::
+
 A template is an XML file that wraps HTML and CSS, with template tags that query
 the roster for the values to fill in. Because it is HTML and CSS underneath, you
 can adapt an existing HTML/CSS design into a template by wrapping it in the XML

@@ -53,7 +53,7 @@ A few causes, in order of likelihood:
 - The player **added the system themselves** with Add from Github. Those only
   update when the player refreshes NewRecruit (or closes and reopens on mobile).
   Systems on the built-in game list update on their own within about a minute.
-- You added a **new `.cat` file**. A refresh picks up changes to existing
+- You added a **new catalogue file**. A refresh picks up changes to existing
   catalogues but not new ones; the player has to re-add the system.
 
 See [Publishing Your Data](/guide/publishing).

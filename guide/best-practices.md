@@ -20,6 +20,10 @@ shared library catalogue, and [link](/guide/concepts/links) to them. There is
 then one definition to update instead of many copies to keep in sync. Every
 major BSData repo follows this pattern.
 
+To move an existing entry into Shared Entries, right-click it and choose **Move
+To**. Moving an entry from Root Selection Entries into Shared leaves a link in its
+place, so the unit keeps working while its definition becomes reusable.
+
 ## Put each profile on the entry it describes
 
 A profile belongs on the thing it describes: a model's stats on the model, a
@@ -64,15 +68,25 @@ the player sees "X is not allowed with Y" instead of an option quietly
 disappearing. Reach for hiding only when the option genuinely does not belong in
 that context at all.
 
-## Use the editor's checks
+## Working in the editor
 
-- Error icons flag broken links, bad category links, and duplicate constraints
-  as you work.
-- A node comment starting with `todo:`, `warning:`, or `error:` shows up as an
-  annotation in the editor, which gives you a lightweight to-do and lint system
-  inside the data itself.
-- The shipped `find-duplicate-ids` and `find-duplicates-profiles` scripts catch
-  duplicate entries before release.
+A few operations that make editing faster:
+
+- **Move To** — right-click a node to relocate it, for example into Shared
+  Entries (see above).
+- **Ctrl+click** to select multiple nodes, then copy, paste, or move them
+  together.
+- Entries are sorted alphabetically by default. To arrange a group's children in
+  a deliberate order, turn on **No Sorting** for the group, then right-click a
+  child and move it up or down. Some nodes can be re-ordered by right-click
+  regardless of the sort setting.
+
+## Leave TODOs and warnings in the data
+
+A node comment starting with `todo:`, `warning:`, or `error:` shows up as an
+annotation on that node in the editor. It gives you a lightweight to-do and lint
+system inside the data itself, so reminders and known issues travel with the file
+instead of living in your head.
 
 ## Save catalogues as JSON for clean diffs
 

@@ -15,6 +15,9 @@ your first build.
 Git is worth installing too, since publishing and editing existing data both use
 a normal git workflow. See [Publishing Your Data](/guide/publishing).
 
+For download links and the setup steps, including the Windows and macOS security
+prompts, see [Installing the Tools](/guide/install).
+
 ## Next
 
 [Your First Game System](/guide/first-system) builds a small but complete system

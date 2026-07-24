@@ -2,10 +2,14 @@
 
 NewRecruit data is built from a small set of pieces.
 
-- Game system (`.gst`) — the ruleset foundation: cost types, profile shapes,
-  categories, and the forces that structure an army. One per game.
-- Catalogue (`.cat`) — a faction's content: its units, wargear, and rules. A
-  system usually has many catalogues.
+- Game system — the ruleset foundation: cost types, profile shapes, categories,
+  and the forces that structure an army. One per game.
+- Catalogue — a faction's content: its units, wargear, and rules. A system
+  usually has many catalogues.
+
+Each is stored as XML (`.gst` for a system, `.cat` for a catalogue), zipped XML,
+or JSON. The format is your choice and doesn't change the data; JSON gives the
+cleanest git history (see [Best Practices](/guide/best-practices#save-catalogues-as-json-for-clean-diffs)).
 - Selection entries — the things a player picks: units, models, weapons,
   upgrades. They nest into groups and reference each other with links.
 - Profiles and characteristics — the stat blocks (Move, Save, Range) attached
@@ -27,3 +31,5 @@ The ideas that take the most getting used to have their own pages:
   another, such as a leader joining a unit.
 - [Relative Modifiers](/guide/concepts/relative-modifiers) — a modifier on one
   node that changes others.
+- [Collective](/guide/concepts/collective) — how identical models in a unit are
+  shown and counted.

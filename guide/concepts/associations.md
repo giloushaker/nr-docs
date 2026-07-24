@@ -25,8 +25,7 @@ recorded. Rules on either side can then react to it.
 
 Related associations can be collected into a group. A rule can then traverse the
 group, following the relationship to apply a modifier or test a condition across
-the associated selections. This is what drives the shared "Leaders" behaviour
-used across several game systems.
+the associated selections.
 
 ## Reaching across an association
 

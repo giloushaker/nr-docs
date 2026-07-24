@@ -16,8 +16,14 @@ hero:
 features:
   - title: Data Authoring
     details: Create game systems and catalogues with the NewRecruit Data Editor.
+    link: /guide/getting-started
+    linkText: Get started
   - title: Publishing
     details: Host your data on GitHub and make it available to players in one click.
+    link: /guide/publishing
+    linkText: How to publish
   - title: Best Practices
     details: Patterns and conventions that keep your data maintainable.
+    link: /guide/best-practices
+    linkText: Read the practices
 ---

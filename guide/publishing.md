@@ -1,11 +1,13 @@
 # Publishing Your Data
 
-Any GitHub repository with your `.gst` and `.cat` files at the root can be
-loaded directly into NewRecruit. No release pipeline is required.
+Any GitHub repository with your game system and catalogue files at the root can
+be loaded directly into NewRecruit, whether they are XML (`.gst`/`.cat`) or JSON.
+No release pipeline is required.
 
 ## Publish a new system
 
-1. Create a GitHub repository and push your `.gst`/`.cat` files to its root.
+1. Create a GitHub repository and push your data files to its root (XML
+   `.gst`/`.cat`, or JSON).
 2. In NewRecruit, open the systems list and click **Add more games**.
 3. Click **Add from Github**.
 4. Paste the repository URL and click the green **+**.
@@ -56,8 +58,9 @@ authors up:
   when first added. The player has to refresh NewRecruit (or fully close and
   reopen on mobile) to pull your changes.
 
-One catch: a refresh picks up changes to existing catalogues, but a **new `.cat`
-file** is not pulled in on refresh. The player has to re-add the system. If you
+One catch: a refresh picks up changes to existing catalogues, but a **new
+catalogue file** is not pulled in on refresh. The player has to re-add the system.
+If you
 expect to add catalogues later, ship them as empty placeholders up front so they
 already exist.
 
@@ -76,13 +79,6 @@ https://newrecruit.eu/app/MySystems?addSystem=ORG%2FREPO&ref=HEAD
 
 Replace `ORG%2FREPO` with your `org/repo` (the `/` encoded as `%2F`). Post it in
 a Discord channel or a README and players install by clicking it.
-
-## Ignore the legacy BSData CI
-
-Repositories forked from BSData often ship GitHub Actions workflows (`ci.yml`,
-`publish-catpkg.yml`, and similar) from the BattleScribe distribution model.
-NewRecruit does not use them, and they now fail on NewRecruit-only data and email
-you errors. Delete those workflow files.
 
 ## Getting listed in NewRecruit
 

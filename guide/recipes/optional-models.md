@@ -25,3 +25,5 @@ model kind is its own entry, and the role comes from which root link is used.
 - Do not set a category on the option by default unless there is a specific
   reason, such as a mount. A stray default category changes how the model is
   grouped and counted.
+- How models group into one line or split into separate stacks is controlled by
+  the [collective](/guide/concepts/collective) flag.

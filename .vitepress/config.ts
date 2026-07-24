@@ -19,6 +19,7 @@ export default defineConfig({
           text: "Start Here",
           items: [
             { text: "Getting Started", link: "/guide/getting-started" },
+            { text: "Installing the Tools", link: "/guide/install" },
             { text: "Your First Game System", link: "/guide/first-system" },
           ],
         },
@@ -33,6 +34,7 @@ export default defineConfig({
               text: "Relative Modifiers",
               link: "/guide/concepts/relative-modifiers",
             },
+            { text: "Collective", link: "/guide/concepts/collective" },
           ],
         },
         {

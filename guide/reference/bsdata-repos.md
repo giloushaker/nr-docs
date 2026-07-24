@@ -1,9 +1,11 @@
 # BSData Repositories
 
-[BSData](https://github.com/BSData) is the community organization hosting game
-data repositories. As of July 2026 it has **169 repositories (92 active, 77
-archived)**. These are useful as **reference examples** — real, maintained data
-you can open in the NR editor to see how established systems model their rules.
+[BSData](https://github.com/BSData) is a community group that makes and hosts
+game data. It is **not required**: NewRecruit loads data from any GitHub
+repository, so you can host your own wherever you like. BSData is simply one place
+a lot of data happens to live, and its repositories are useful as **reference
+examples** — real, maintained data you can open in the NR editor to see how
+established systems model their rules.
 
 ::: tip Browse the live list
 This snapshot will drift. Browse the current set at
@@ -37,17 +39,12 @@ Dozens more cover smaller games (Bushido, Argatoria, Deadzone, Frostgrave,
 Gaslands, Bolt Action, Flames of War, Kings of War, Conquest, Marvel Crisis
 Protocol, and many others). See the full org list for those.
 
-## The one non-game repo worth knowing
+## Requesting a BSData repo
 
-[catalogue-development](https://github.com/BSData/catalogue-development) — its
-wiki (Getting Started, Data Author Guide, Common Catalogue Patterns) is the most
-complete authoring reference that exists today. It's BattleScribe-era and
-partly outdated, but the core modeling concepts still apply.
+To have your data hosted under the BSData organization, open an issue on
+[catalogue-development](https://github.com/BSData/catalogue-development/issues)
+requesting a new repository.
 
-::: warning Ignore the BSData publishing machinery
-The rest of BSData's tooling — `gallery`, `TemplateDataRepo`, `schemas`, and
-the CI actions (`publish-catpkg`, `process-release-command`, `check-datafiles`)
-— targets the dead BattleScribe distribution model and is outdated/broken. For
-NewRecruit you need none of it: a repo with `.gst`/`.cat` at the root loads
-directly. See [Publishing Your Data](/guide/publishing).
-:::
+You don't need any of BSData's tooling to publish. A repository with your data
+files at the root loads straight into NewRecruit; see
+[Publishing Your Data](/guide/publishing).

@@ -18,11 +18,9 @@ choice only". The name should tell the player what they are picking.
 ## Giving a model several default weapons
 
 If a model starts with more than one weapon by default (a pistol and a blade,
-say), set the **default amount** on each weapon that should start equipped. NR's
+say), set the **default amount** on each weapon that should start equipped. The
 `defaultAmount` field preselects a weapon while leaving the player free to remove
-it, and it accepts comma-separated values for multiple default stacks. This is
-the NewRecruit way and is cleaner than the older BattleScribe trick of forcing
-each weapon with a `min 1` constraint and relaxing it with a modifier.
+it, and it accepts comma-separated values for multiple default stacks.
 
 ## Every model takes the same weapon
 
