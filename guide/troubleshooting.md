@@ -32,16 +32,24 @@ the trigger on one unit affects all of them. Narrow the scope to the unit or
 model that should react. See [Scope & Context](/guide/concepts/scope) and
 [Show or hide an option](/guide/recipes/conditional-options).
 
-## A rule doesn't fire even though the condition looks right
+## A rule isn't firing
 
-If the entries the condition counts are nested below the node it runs on, the
-condition only looks one level down by default. Tick **"and all child
-selections"** on the condition so it sees the nested entries.
+First check **"and all child selections"**. A condition or constraint only looks
+one level down from its scope by default, so if the entries it should count sit
+deeper, tick "and all child selections" to make it recurse. A rule that looks
+correct but does nothing is usually missing this.
 
-## "Missing import" after adding a library
+If that is not it, inspect the selection directly. In the builder, middle-click
+the selection to load it into a debug variable, then open the browser's dev tools
+console (in Chrome, More tools → Developer tools → Console). Assign
+`let state = $debugOption.state` and the console autocompletes the node's
+properties. Two useful calls:
 
-Adding a catalogue or library to fix a missing import does not always take
-effect straight away. Reload the system and the import resolves.
+- `state.print_modifiers()` — the modifiers applied to the node
+- `state.print_extra_constraints()` — the constraints applied to it
+
+This shows what the engine actually computed, which usually points at the wrong
+scope, the missing recurse flag, or a condition that never matched.
 
 ## My data doesn't update for players
 
@@ -53,8 +61,6 @@ A few causes, in order of likelihood:
 - The player **added the system themselves** with Add from Github. Those only
   update when the player refreshes NewRecruit (or closes and reopens on mobile).
   Systems on the built-in game list update on their own within about a minute.
-- You added a **new catalogue file**. A refresh picks up changes to existing
-  catalogues but not new ones; the player has to re-add the system.
 
 See [Publishing Your Data](/guide/publishing).
 
@@ -81,32 +87,19 @@ it. Rather than hiding a required option, preselect it with `defaultAmount`, or
 make the constraint **automatic** so NewRecruit resolves it, or invert the logic
 so the option is shown rather than hidden when it applies.
 
-## An entry shows 0 references but is clearly used
+## A unit's models stack or split oddly
 
-The reference count tracks structural links. Conditions and constraints that
-mention an entry are counted separately, so an entry used only by a rule can show
-a low or zero reference count while still being in use.
+Extra per-model add and remove buttons, models that won't combine into one line,
+or options that can't be set per model are usually the
+[collective](/guide/concepts/collective) flag. Mark every option on a model
+collective to group identical models into one line; leave one option
+non-collective to let each model be configured on its own.
 
 ## Costs aren't adding up
 
 Most often the unit is priced as a flat cost instead of per model, so adding
 bodies does not change the total. Price the models, not the unit. See
 [Points that scale per model](/guide/recipes/points-per-model).
-
-## Working out why a rule isn't firing
-
-When a condition or modifier isn't behaving and the cause isn't obvious, inspect
-the selection directly. In the builder, middle-click the selection to load it
-into a debug variable, then open the browser's dev tools console (in Chrome, More
-tools → Developer tools → Console). Assign `let state = $debugOption.state` and
-the console will autocomplete the node's properties. Two useful calls:
-
-- `state.print_modifiers()` — the modifiers applied to the node
-- `state.print_extra_constraints()` — the constraints applied to it
-
-This shows what the engine actually computed, which usually points straight at
-the wrong scope, a missing "and all child selections", or a condition that never
-matched.
 
 ## Profile characteristics print in the wrong order
 

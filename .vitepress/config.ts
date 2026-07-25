@@ -35,6 +35,7 @@ export default defineConfig({
               link: "/guide/concepts/relative-modifiers",
             },
             { text: "Collective", link: "/guide/concepts/collective" },
+            { text: "Known Limitations", link: "/guide/limitations" },
           ],
         },
         {

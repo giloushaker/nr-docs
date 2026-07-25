@@ -6,11 +6,18 @@ every child at once.
 
 ## Manual order
 
-Turn on **No Sorting** for a group to arrange its children yourself. Right-click a
-child and move it up or down; the order you set is remembered. Some nodes can be
-re-ordered by right-click regardless of the sort setting.
+Type a number in the **Position** field next to an entry's name to set its order;
+lower numbers come first. Some nodes can also be re-ordered by right-clicking.
+
+**No Sorting** is a separate setting, an option in the sorting dropdown in the
+node-tree panel. It turns off the automatic alphabetical sort so you can order the
+underlying data by hand. That changes how entries sit in the stored file, which
+may or may not matter to you.
 
 ## Sort configuration
+
+The sort configuration sits on an entry that contains several child entries. If
+you are looking at a link, follow it to its target to reach the configuration.
 
 For anything larger than a handful of entries, the editor can mass-sort a group's
 children from a small configuration. Each line is one rule, and rules stack: the

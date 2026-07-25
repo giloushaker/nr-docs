@@ -28,11 +28,3 @@ model chooses its own weapon, leave at least one of those options **non-collecti
 That tells the builder to split the models into individually configurable stacks,
 so the player can give each its own loadout. Making every weapon collective groups
 all the models together and takes that choice away.
-
-## The all-or-none effect
-
-Collective also ties counts together. When an option is collective, every model
-under the same parent holds the **same** count of it, so taking it on one takes it
-on all. This is the tool for "every model in the unit takes this upgrade", but it
-surprises authors who mark something collective without meaning to link its count
-across the whole unit.

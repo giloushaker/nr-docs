@@ -58,12 +58,6 @@ authors up:
   when first added. The player has to refresh NewRecruit (or fully close and
   reopen on mobile) to pull your changes.
 
-One catch: a refresh picks up changes to existing catalogues, but a **new
-catalogue file** is not pulled in on refresh. The player has to re-add the system.
-If you
-expect to add catalogues later, ship them as empty placeholders up front so they
-already exist.
-
 If you keep the repository URL on the game system as a publication named
 `github`, the editor auto-increments the catalogue revision once per change
 against the repository, so you do not have to bump it by hand.
