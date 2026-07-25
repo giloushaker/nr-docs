@@ -48,3 +48,8 @@ requesting a new repository.
 You don't need any of BSData's tooling to publish. A repository with your data
 files at the root loads straight into NewRecruit; see
 [Publishing Your Data](/guide/publishing).
+
+## Community
+
+The BSData community coordinates and answers data questions on the
+[BSData Discord](https://www.bsdata.net/discord).

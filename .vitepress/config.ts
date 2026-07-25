@@ -29,12 +29,14 @@ export default defineConfig({
             { text: "Core Concepts", link: "/guide/concepts" },
             { text: "Scope & Context", link: "/guide/concepts/scope" },
             { text: "Links & Shared Entries", link: "/guide/concepts/links" },
+            { text: "Conditions", link: "/guide/concepts/conditions" },
+            { text: "Modifiers", link: "/guide/concepts/modifiers" },
             { text: "Associations", link: "/guide/concepts/associations" },
-            {
-              text: "Relative Modifiers",
-              link: "/guide/concepts/relative-modifiers",
-            },
             { text: "Collective", link: "/guide/concepts/collective" },
+            {
+              text: "In-text References",
+              link: "/guide/concepts/in-text-references",
+            },
             { text: "Known Limitations", link: "/guide/limitations" },
           ],
         },

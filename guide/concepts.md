@@ -29,7 +29,10 @@ The ideas that take the most getting used to have their own pages:
   using it in many places.
 - [Associations](/guide/concepts/associations) — attaching one selection to
   another, such as a leader joining a unit.
-- [Relative Modifiers](/guide/concepts/relative-modifiers) — a modifier on one
-  node that changes others.
+- [Conditions](/guide/concepts/conditions) — tests that gate rules on and off.
+- [Modifiers](/guide/concepts/modifiers) — changes to values, including relative
+  modifiers that affect other nodes.
 - [Collective](/guide/concepts/collective) — how identical models in a unit are
   shown and counted.
+- [In-text References](/guide/concepts/in-text-references) — auto-linking names in
+  rules text.

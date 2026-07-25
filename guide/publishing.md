@@ -21,10 +21,11 @@ seeing changes until you publish the next release. A repository with no releases
 simply tracks its latest commit. When adding a system, the player can also choose
 between latest release and latest commit.
 
-Tag your releases consistently as `vX.Y.Z`. NewRecruit takes the top tag GitHub
-returns, and GitHub does not sort tags by date, so an oddly-named tag (a missing
-`v`, or `1.3` landing after `v1.4`) can be treated as the newest and hide your
-actual latest release.
+For the release path, NewRecruit asks GitHub for the latest release, which GitHub
+picks by date, so a normal release flow just works. Tagging consistently as
+`vX.Y.Z` is still good practice: it matters most if a system is configured to
+track the latest tag instead of releases, since GitHub's tag ordering is not
+reliably by date.
 
 ## Homebrew: editing an existing system
 
@@ -48,8 +49,7 @@ To modify existing data (a "homebrew"):
 
 ## Updating published data
 
-How an update reaches players depends on how they got the system, and this trips
-authors up:
+How an update reaches players depends on how they got the system:
 
 - **Systems on the built-in game list** are re-checked by the NewRecruit server
   roughly hourly, so pushing a commit (or cutting a release) reaches players on
@@ -65,14 +65,18 @@ against the repository, so you do not have to bump it by hand.
 ## Sharing with an install link
 
 Instead of walking players through **Add from Github**, you can share a link that
-adds the repository in one step. The format is:
+adds the repository in one step. Post it in a Discord channel or a README and
+players install by clicking it.
+
+To get the link, open the system's info panel (for a system added from GitHub)
+and click the **share** icon to copy the URL. It is also shown in a read-only box
+during the **Add from Github** flow.
+
+The link looks like this:
 
 ```
 https://newrecruit.eu/app/MySystems?addSystem=ORG%2FREPO&ref=HEAD
 ```
-
-Replace `ORG%2FREPO` with your `org/repo` (the `/` encoded as `%2F`). Post it in
-a Discord channel or a README and players install by clicking it.
 
 ## Getting listed in NewRecruit
 

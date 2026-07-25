@@ -29,7 +29,7 @@ the associated selections.
 
 ## Reaching across an association
 
-Associations combine with [relative modifiers](/guide/concepts/relative-modifiers).
+Associations combine with [relative modifiers](/guide/concepts/modifiers#relative-modifiers-affects).
 A modifier can follow an association, with a set traversal depth, to change the
 selection on the other side. This is how a character grants an aura or buff to
 the unit it joined. The relative modifiers page covers the mechanics.
