@@ -89,6 +89,7 @@ export default defineConfig({
         {
           text: "Reference",
           items: [
+            { text: "Supported Systems", link: "/guide/reference/supported-systems" },
             { text: "BSData Repositories", link: "/guide/reference/bsdata-repos" },
           ],
         },
