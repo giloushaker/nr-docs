@@ -19,12 +19,15 @@ When the counted entries are nested below the node the condition runs on, tick
 **"and all child selections"** on the condition. Without it the condition only
 looks one level down and the rule appears not to fire.
 
-## Getting the scope right
+Set the condition's scope to the unit or model that should react, not the whole
+roster. See [Scope & Context](/guide/concepts/scope).
 
-This is where the option most often leaks. If the condition is scoped to the
-whole roster, taking the skill on one model unlocks the option everywhere. Scope
-it to the unit or model that should react, usually `parent`, `unit`, or `model`.
-See [Scope & Context](/guide/concepts/scope) for the full explanation.
+## Hide a configuration unit once it's added
+
+For a one-time configuration or "header" entry that should drop out of the
+add-unit list after it is in the army, set it hidden with a condition that it is
+already present — using the `header` childId, testing for at least one in the
+force. It stays in the army but stops cluttering the list.
 
 ## Forbid instead of hide
 

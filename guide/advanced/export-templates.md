@@ -17,6 +17,9 @@ the roster for the values to fill in. Because it is HTML and CSS underneath, you
 can adapt an existing HTML/CSS design into a template by wrapping it in the XML
 tags and adding the roster queries.
 
+Templates can also run JavaScript to compute values and shape the output, so they
+are not limited to plain field substitution.
+
 The community templates repository,
 [giloushaker/nr-templates](https://github.com/giloushaker/nr-templates), has
 working examples to start from, including

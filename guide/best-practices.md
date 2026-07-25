@@ -22,7 +22,7 @@ major BSData repo follows this pattern.
 
 To move an existing entry into Shared Entries, right-click it and choose **Move
 To**. Moving an entry from Root Selection Entries into Shared leaves a link in its
-place, so the unit keeps working while its definition becomes reusable.
+place, so the entry keeps working while its definition becomes reusable.
 
 ## Put each profile on the entry it describes
 
@@ -44,11 +44,16 @@ lay out their output, so a weapon profile parked on the unit instead of the
 weapon can render under the wrong heading, in the wrong place, or not at all.
 Building the tree correctly is what makes exports come out right.
 
+The same applies to third-party tools. [YellowScribe](https://yellowscribe.link/)
+imports a NewRecruit list into Tabletop Simulator, reading the datasheet output to
+build the models and their stat tooltips — so a homebrew unit only comes through
+correctly there if its profiles sit on the right entries.
+
 ## Scope rules as narrowly as the rule
 
 Most rules should use the tightest scope that fits, usually `parent`, `unit`, or
 `model` rather than `force` or `roster`. A scope wider than the rule needs is the
-usual cause of an option leaking across the army. See
+usual cause of an option applying to the whole army instead of one unit. See
 [Scope & Context](/guide/concepts/scope).
 
 ## Make a freshly added unit legal
@@ -67,6 +72,9 @@ the problem when it applies. NewRecruit surfaces these messages on the roster, s
 the player sees "X is not allowed with Y" instead of an option quietly
 disappearing. Reach for hiding only when the option genuinely does not belong in
 that context at all.
+
+A constraint can also carry a custom `message`, shown when it is broken, so the
+player reads a plain-language reason instead of a generic limit error.
 
 ## Working in the editor
 

@@ -24,11 +24,5 @@ cost at all if every body is counted the same way.
 
 ## Notes
 
-- Pricing per model rather than per unit is what makes ally and points-limit
-  rules count correctly, since the roster can see how many models are present.
-- Age of Sigmar goes one step further: the unit starts at its minimum cost,
-  decrements to zero when the model increment is present, then re-increments per
-  model, so ally point caps compute from a clean per-model figure. Use this only
-  if your system has ally caps that need it.
-- Keep the increment at 0 base points and let the modifier set the cost, so the
-  same model entry copies cleanly between units.
+- To make a unit buy models in fixed blocks (five at a time, say), set the `step`
+  field on the model entry so its amount changes in that increment.

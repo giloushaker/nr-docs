@@ -19,7 +19,9 @@ each of those is a modifier.
 Setting and counting:
 
 - `set` — set the field to the value.
-- `increment` / `decrement` — add to or subtract from a number.
+- `increment` / `decrement` — add to or subtract from a number. A `position` can
+  pick which number to change inside a string value, for example the `3` in
+  `D6+3`.
 
 Arithmetic, for numeric fields:
 
@@ -71,6 +73,20 @@ Without conditions a modifier always applies. With conditions it applies only
 when they pass. Modifiers run in an order set by their type and their order in
 the data; where the order matters, turn off sorting and arrange them by hand (see
 [Sorting](/guide/advanced/sorting)).
+
+## Repeats
+
+A modifier can **repeat**, applying once for every N of something instead of a
+single time. A repeat has its own scope and query — for example "1 per model in
+parent" — and the modifier runs that many times. This is what scales per-model
+costs and ratio limits: an increment-cost modifier that repeats once per model
+raises the price for each model. See
+[Points that scale per model](/guide/recipes/points-per-model) and the
+[N per M](/guide/recipes/army-limits#n-per-m-ratios) limit.
+
+A modifier can have more than one repeat; their counts add together, so the
+modifier applies the combined number of times. Each repeat counts down by its own
+value — "once per N" — and rounds down unless set to round up.
 
 ## Relative modifiers (`affects`)
 

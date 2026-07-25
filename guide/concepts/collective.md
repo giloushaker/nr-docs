@@ -9,7 +9,9 @@ looks in the builder and how its options behave.
 Mark a selection **collective** and identical copies collapse into a single line
 with a count, like "10× Trooper", and the builder shows a counter instead of
 separate add and remove buttons for each model. Without it, each model is its own
-stack that the player adds and configures individually.
+stack that the player adds and configures individually — these individually
+configurable stacks are also called **sub units**, a term you may run into in
+NewRecruit and its release notes.
 
 ## Identical models: make everything collective
 

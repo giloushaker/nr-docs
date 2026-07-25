@@ -48,11 +48,11 @@ authors tend to leave it on by default.
 
 ## A common mistake
 
-A weapon hidden until a character takes a skill can leak across the army. If the
-condition is scoped to `roster`, it counts the skill anywhere, so taking it on one
-character reveals the weapon on all of them. Scoping to `parent` limits it to each
-character's own skills. Most leaks of this kind come from a scope set wider than
-the rule needs.
+For example, a weapon is hidden until a character takes a skill. Scoped to
+`roster`, the condition counts that skill anywhere in the army, so taking it on
+one character reveals the weapon on every character. Scoped to `parent`, each
+character reacts only to its own skills. This kind of mistake comes from a scope
+set wider than the rule needs.
 
 Where narrowing the scope is not enough, the options usually need to sit under the
 same parent so one can see the other.

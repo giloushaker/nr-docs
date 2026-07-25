@@ -7,9 +7,9 @@ available.
 Some ship with the editor, such as `find-duplicate-ids`, `find-duplicates-profiles`,
 and `fix-profiles`. You can also write your own.
 
-::: warning
-Scripting is not finished. Scripts currently run manually only; hooks (on paste,
-on change, on load) may come later.
+::: tip
+Scripts run manually, and can also hook into paste to transform pasted text (see
+[Paste hooks](#paste-hooks) below). The scripting feature is still evolving.
 :::
 
 ## Writing a script
@@ -47,3 +47,20 @@ or `[node, string][]`. String output renders as HTML.
 Example scripts (written in TypeScript, though only JS is supported for your own)
 live in the editor's [default-scripts](https://github.com/giloushaker/nr-editor/tree/master/default-scripts).
 If a script needs imports, bundle them into one `.js` file with rollup or webpack.
+
+## Paste hooks
+
+A script can intercept pasted text by exporting a `hooks.paste` handler. This is
+how you build a custom importer — paste a block of stat-line or rules text and
+turn it into entries. The shipped The Old World paste scripts do exactly this.
+
+```js
+export default {
+  name: "Paste unit profile",
+  hooks: {
+    async paste(event, text) {
+      // parse `text` and create entries via $store / $catalogue
+    },
+  },
+};
+```

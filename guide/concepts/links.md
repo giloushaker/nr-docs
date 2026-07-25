@@ -40,9 +40,9 @@ piece of it directly. Two approaches get the same result:
 ## Seeing what links to what
 
 The References panel lists every place an entry is used, and you can follow a
-link to jump to its target. Note that the reference count tracks structural
-links; conditions and constraints that mention an entry are counted separately,
-so an entry can be in use by a rule even when its reference count looks low.
+link to jump to its target. The panel shows two lists: structural links, and
+uses from conditions, constraints, modifiers, and repeats. The reference count
+on a node includes both, so a rule that mentions an entry counts toward it.
 
 <!-- TODO: worked example — one shared weapon on two units, one with a cost
 change via a conditional modifier; screenshot of blue links and the References
