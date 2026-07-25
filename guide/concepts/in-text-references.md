@@ -23,19 +23,8 @@ turn ordinary text into links everywhere.
 A name needs at least two letters or digits to be indexed, so a single-character
 rule name will not auto-link. Give it an alias of two or more characters.
 
-## Formatting text
-
-Text fields render Markdown: `*italic*`, `**bold**`, `^^small caps^^`, and tables.
-The formatting shows in NewRecruit's display and in exports.
-
 ## Category descriptions
 
 A category entry can carry a description. Its text takes part in the same
 auto-linking, and the description itself renders as a reference where applicable,
 so a category can point players at a related rule.
-
-## Shared rules
-
-For a rule used in many places, define it once and reference it with an info link
-rather than copying the text, so every use stays in sync. See
-[Links & Shared Entries](/guide/concepts/links).

@@ -29,7 +29,7 @@ export default defineConfig({
             { text: "Core Concepts", link: "/guide/concepts" },
             { text: "Scope & Context", link: "/guide/concepts/scope" },
             { text: "Links & Shared Entries", link: "/guide/concepts/links" },
-            { text: "Profiles", link: "/guide/concepts/profiles" },
+            { text: "Profiles & Rules", link: "/guide/concepts/profiles" },
             { text: "Conditions", link: "/guide/concepts/conditions" },
             { text: "Constraints", link: "/guide/concepts/constraints" },
             { text: "Modifiers", link: "/guide/concepts/modifiers" },

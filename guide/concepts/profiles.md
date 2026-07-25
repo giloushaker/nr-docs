@@ -1,7 +1,8 @@
-# Profiles
+# Profiles & Rules
 
 A profile is a stat block — a set of characteristics such as Move, Save, or
-Range — of a given profile type, attached to an entry.
+Range — of a given profile type, attached to an entry. A rule is a block of
+text — a special rule or ability — also attached to an entry.
 
 ## Profile types
 
@@ -46,3 +47,14 @@ visible stat line.
 The editor cannot reorder characteristics from the UI. Edit the order in the
 profile's XML and run the shipped **fix profiles** script; see
 [Troubleshooting](/guide/troubleshooting#profile-characteristics-print-in-the-wrong-order).
+
+## Formatting text
+
+Text fields render Markdown: `*italic*`, `**bold**`, `^^small caps^^`, and tables.
+The formatting shows in NewRecruit's display and in exports.
+
+## Shared rules
+
+For a rule used in many places, define it once and reference it with an info link
+rather than copying the text, so every use stays in sync. See
+[Links & Shared Entries](/guide/concepts/links).

@@ -27,8 +27,8 @@ The ideas that take the most getting used to have their own pages:
   or constraint looks at.
 - [Links & Shared Entries](/guide/concepts/links) — defining something once and
   using it in many places.
-- [Profiles](/guide/concepts/profiles) — stat blocks and how their type controls
-  display.
+- [Profiles & Rules](/guide/concepts/profiles) — stat blocks, rules text, and
+  how their type controls display.
 - [Conditions](/guide/concepts/conditions) — tests that gate rules on and off.
 - [Constraints](/guide/concepts/constraints) — limits on what can be taken,
   including automatic constraints.
