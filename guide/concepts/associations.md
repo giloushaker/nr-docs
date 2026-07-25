@@ -21,11 +21,11 @@ recorded. Rules on either side can then react to it.
 - A default or auto-check can set the association automatically when the rules
   leave only one valid target.
 
-## Association groups
+## Grouped associations
 
 Related associations can be collected into a group. A rule can then traverse the
-group, following the relationship to apply a modifier or test a condition across
-the associated selections.
+grouped associations, following the relationship to apply a modifier or test a
+condition across the associated selections.
 
 ## Reaching across an association
 

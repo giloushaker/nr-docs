@@ -20,8 +20,9 @@ particular entry within the node itself rather than the node as a whole.
 
 The core constraints are `min` and `max` on a field, usually selections and
 sometimes points. A minimum makes the roster illegal until it is met; a maximum
-caps it. Percentages are supported — measure against the game size with
-`pts limit` rather than current spend. For the common shapes (slots, ratios,
+caps it. Percentages are supported — measure against the game size by picking
+the cost type's **Limit** field (shown as `pts Limit` in the field dropdown)
+rather than the cost itself. For the common shapes (slots, ratios,
 duplicates, percentage caps) see [Army-wide limits](/guide/recipes/army-limits).
 
 ## The value -1

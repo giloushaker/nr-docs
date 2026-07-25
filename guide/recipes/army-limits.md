@@ -43,11 +43,11 @@ that category in the roster, for example `max 50%`.
 
 A percentage is measured against one of two things: the points **currently
 spent** in the roster, or the roster's **cost limit**, meaning the game size the
-player set (1000, 2000, and so on). The constraint's field selects which:
-`pts limit` measures against the cost limit, plain `pts` measures against current
-spend.
+player set (1000, 2000, and so on). The constraint's field selects which: each
+cost type has a limit variant in the field dropdown — `pts Limit` measures
+against the cost limit, plain `pts` measures against current spend.
 
-Use `pts limit`. "Max 50% on Elites" means half the game size. With `pts` it
+Use `pts Limit`. "Max 50% on Elites" means half the game size. With `pts` it
 would mean half of whatever is currently in the list, which changes with every
 unit added.
 

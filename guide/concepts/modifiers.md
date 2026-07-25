@@ -96,8 +96,10 @@ how most "this unit buffs that unit" rules are built: a modifier on an upgrade
 that adds +1 Attack to every model in the unit sits on the upgrade but changes
 the models.
 
-A relative modifier has an **`affects`** setting that says what it changes: a
-scope plus a target within it.
+A relative modifier has an **Affects** setting that says what it changes: a
+scope plus a target within it. That is the label to look for in the editor —
+"relative modifier" is this guide's name for the pattern, not something the UI
+displays.
 
 - `self` — the node itself, which is just a normal modifier
 - child selections — selections nested under the scope
@@ -105,7 +107,8 @@ scope plus a target within it.
 - recursive — the whole subtree below the scope
 - associated nodes — follow an [association](/guide/concepts/associations) to its
   target
-- group associations — follow an association group, with a set traversal depth
+- grouped associations — follow the associations in a group, with a set
+  traversal depth
 
 A useful way to hold it in your head: scope travels **up** to find a starting
 point, and `affects` travels **down** from there to the nodes that change. Add a

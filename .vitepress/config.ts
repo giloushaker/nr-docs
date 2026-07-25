@@ -83,7 +83,7 @@ export default defineConfig({
           ],
         },
         {
-          text: "Shipping",
+          text: "Publishing",
           items: [
             { text: "Publishing Your Data", link: "/guide/publishing" },
             { text: "Best Practices", link: "/guide/best-practices" },

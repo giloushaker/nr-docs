@@ -23,19 +23,19 @@ The common scopes:
 
 | Scope | Counts within |
 |-------|---------------|
-| `self` | the entry the rule sits on |
-| `parent` | the entry above, skipping selection groups |
-| `force` | the force or detachment |
-| `roster` | the whole army |
-| `ancestor` | this node and every parent above it; used for instance-of (keyword) checks |
-| `primary-catalogue` | the node's catalogue |
-| `primary-category` | the node's primary category |
+| `Self` | the entry the rule sits on |
+| `Parent` | the entry above, skipping selection groups |
+| `Force` | the force |
+| `Roster` | the whole army |
+| `Ancestor` | this node and every parent above it; used for instance-of (keyword) checks |
+| `Primary Catalogue` | the catalogue selected for the node's force |
+| `Primary Category` | the node's primary category |
 
 Two details matter here:
 
-- `self` is the entry the rule is attached to, not a profile on it. A condition
-  on a profile still resolves `self` to the profile's entry.
-- `parent` skips over selection groups and stops at the entry above, so a rule
+- `Self` is the entry the rule is attached to, not a profile on it. A condition
+  on a profile still resolves `Self` to the profile's entry.
+- `Parent` skips over selection groups and stops at the entry above, so a rule
   inside a "Weapons" group sees the model, not the group.
 
 ## Count nested selections: "and all child selections"
@@ -49,8 +49,8 @@ authors tend to leave it on by default.
 ## A common mistake
 
 For example, a weapon is hidden until a character takes a skill. Scoped to
-`roster`, the condition counts that skill anywhere in the army, so taking it on
-one character reveals the weapon on every character. Scoped to `parent`, each
+`Roster`, the condition counts that skill anywhere in the army, so taking it on
+one character reveals the weapon on every character. Scoped to `Parent`, each
 character reacts only to its own skills. This kind of mistake comes from a scope
 set wider than the rule needs.
 
@@ -59,11 +59,12 @@ same parent so one can see the other.
 
 ## Type scopes
 
-`force` and `roster` stop at structural nodes. A type scope instead walks up to
-the nearest node of a chosen kind: `unit`, `model`, `model-or-unit`, `upgrade`,
-`non-upgrade-entry`, or `root-entry`.
+`Force` and `Roster` stop at structural nodes. A type scope instead walks up to
+the nearest node of a chosen kind — in the scope dropdown these are `Type: Unit`,
+`Type: Model`, `Type: Model or Unit`, `Type: Upgrade`, `Entry & Type: Not
+Upgrade`, and `Root Entry`.
 
-For example, "at least 1 per `model`" counts within the nearest model, whatever
+For example, "at least 1 per `Type: Model`" counts within the nearest model, whatever
 the nesting looks like. This is the usual way to write per-model wargear limits.
 Some type scopes also have a variant that includes the starting node in the
 count.
@@ -72,7 +73,7 @@ count.
 
 When a rule lives on a [shared entry](/guide/concepts/links), its scope is
 resolved at each place the entry is used, not where it is defined. A
-`parent`-scoped rule on a shared weapon means "the unit that took this weapon",
+`Parent`-scoped rule on a shared weapon means "the unit that took this weapon",
 which will be different every time the weapon is linked.
 
 <!-- TODO: screenshot of the scope dropdown; per-model constraint example -->

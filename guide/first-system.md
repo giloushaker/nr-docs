@@ -4,8 +4,6 @@ This tutorial builds a small but complete game system from scratch: a system
 file, one faction catalogue, a unit with options and points, and force
 constraints. At the end you load it in the builder and see it work.
 
-Screenshots are still to come; the steps describe where to click.
-
 ## 1. Create the system
 
 Open the [NR Data Editor](https://github.com/giloushaker/nr-editor/releases),
@@ -91,7 +89,7 @@ links. Select a category under the force and add a constraint, such as `max 6
 selections`.
 
 Percentage limits like "max 50% of a category" are common. Base the percentage on
-the **cost limit** (the game size) by setting the field to `pts limit`, not on the
+the **cost limit** (the game size) by setting the field to `pts Limit`, not on the
 points currently spent. See
 [Army-wide limits](/guide/recipes/army-limits#percentage-caps).
 

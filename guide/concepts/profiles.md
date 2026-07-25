@@ -29,9 +29,10 @@ rather than a stat column.
 
 Characteristic types support two display helpers:
 
-- `formatRules` — how a value is shown, for example appending a unit like the `"`
-  on a movement value.
-- `defaultValue` — a value the editor prefills for a new profile.
+- **Formatting Rules** (`formatRules`) — how a value is shown, for example
+  appending a unit like the `"` on a movement value.
+- **Default Value** (`defaultValue`) — a value the editor prefills for a new
+  profile.
 
 ## Attributes
 
