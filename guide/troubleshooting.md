@@ -14,6 +14,10 @@ Usually one of the links between the unit and the force is missing:
 - The unit is not under **Root Selection Entries**, or the root link is missing,
   so nothing references it.
 
+If the chain checks out, the unit (or its root link) may simply be **hidden** —
+the hidden flag set on it, or a hide modifier's condition firing when you
+didn't expect it to.
+
 Work back along that chain: unit has a primary category, the force offers that
 category, and the unit is reachable from a root entry. See
 [Your First Game System](/guide/first-system) for the full setup.
