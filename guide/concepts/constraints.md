@@ -37,7 +37,13 @@ Mark a constraint **automatic** and NewRecruit resolves the selection itself to
 satisfy it, auto-adding or adjusting the choice rather than only flagging an
 error. This is what makes forced selections (equal `min` and `max`) safe: the
 builder fills them in itself instead of reporting an error the player has to
-fix. Use it where the correct selection is unambiguous, not on everything.
+fix.
+
+Automatic only matters when the constraint's **value can change** — a modifier
+raising the min, or a repeat scaling it as the unit grows. A constraint whose
+value never changes is already satisfied when the unit is added; there is
+nothing left for automatic to resolve. Use it where the correct selection is
+unambiguous, not on everything.
 
 ## Custom messages <Badge type="tip" text="v1.3.31" />
 

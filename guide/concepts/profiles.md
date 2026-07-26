@@ -74,11 +74,30 @@ profile's XML and run the shipped **fix profiles** script; see
 
 ## Formatting text
 
-Text fields render Markdown: `*italic*`, `**bold**`, `^^small caps^^`, and tables.
-The formatting shows in NewRecruit's display and in exports.
+Text fields render Markdown: `*italic*`, `**bold**`, `^^small caps^^`, and
+tables. The formatting shows in NewRecruit's display and in exports.
 
-## Shared rules
+Tables use the usual pipe syntax — a header row, a separator row, then data
+rows. Use `<br>` for a line break inside a cell:
 
-For a rule used in many places, define it once and reference it with an info link
-rather than copying the text, so every use stays in sync. See
+```
+| Roll | Result             |
+|------|--------------------|
+| 1-3  | Nothing            |
+| 4-6  | +1 Attack<br>+1 Ld |
+```
+
+For a table without headings, leave the header cells empty:
+
+```
+|     |           |
+|-----|-----------|
+| 1-3 | Nothing   |
+| 4-6 | +1 Attack |
+```
+
+## Shared rules and profiles
+
+For a rule or profile used in many places, define it once and reference it with
+an info link rather than copying it, so every use stays in sync. See
 [Links & Shared Entries](/guide/concepts/links).
