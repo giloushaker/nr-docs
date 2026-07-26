@@ -108,16 +108,10 @@ See [Put each profile on the entry it describes](/guide/best-practices#put-each-
 
 ## 13. Test it in the builder
 
-Load the system in NewRecruit and build a list to check it behaves.
-
-The quickest loop is on a Chromium-based browser (Chrome, Edge): use **Add from
-folder** to point the website at your working folder. It hot-reloads as you save,
-so you can edit in the data editor and see the build update without committing or
-re-importing. Firefox and Safari do not support this.
-
-The desktop builder also loads a local folder and hot-reloads. It is not tested on
-Linux or macOS, and it often lags behind the website version, so prefer the
-website loop where you can.
+Load the system in NewRecruit and build a list to check it behaves. The fast way
+is the hot-reload loop from
+[Installing the Tools](/guide/install#testing-your-data): **Add from folder** on
+a Chromium browser, pointed at your working folder.
 
 If a unit doesn't show up, work through the
 [Troubleshooting](/guide/troubleshooting#my-unit-doesnt-appear-in-the-builder)

@@ -10,7 +10,7 @@ your first build.
 - A [GitHub](https://github.com) account, used to publish your data.
 - Optionally, NewRecruit itself, to test your data the way a player would load
   it. On a Chromium-based browser it can load your working folder directly and
-  hot-reload as you save; see [Best Practices](/guide/best-practices#test-before-publishing).
+  hot-reload as you save; see [Testing your data](/guide/install#testing-your-data).
 
 Git is worth installing too, since publishing and editing existing data both use
 a normal git workflow. See [Publishing Your Data](/guide/publishing).

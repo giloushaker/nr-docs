@@ -69,6 +69,11 @@ the nesting looks like. This is the usual way to write per-model wargear limits.
 Some type scopes also have a variant that includes the starting node in the
 count.
 
+Type scopes work off the entry's **Type** field (`unit`, `model`, `upgrade`,
+`mount`, `crew`), and Type is not cosmetic: it also drives model counting,
+how exports and importers treat the entry, and play-mode features such as
+wound tracking. Set `unit` on units, `model` on models, `upgrade` on wargear.
+
 ## Scope on shared entries
 
 When a rule lives on a [shared entry](/guide/concepts/links), its scope is

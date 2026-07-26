@@ -103,13 +103,9 @@ rewritten blob.
 
 ## Test before publishing
 
-Load the data in the builder and build a list with it before you publish.
-
-On a Chromium-based browser (Chrome, Edge, and similar), the NewRecruit website
-can load a system straight from a local folder with **Add from folder**, and it
-hot-reloads as you save. You edit in the data editor, save, and the build
-updates without any commit or re-import, which makes for a fast test loop.
-Firefox and Safari do not support the folder access this relies on.
+Load the data in the builder and build a list with it before you publish. The
+fast hot-reload loop (**Add from folder** on a Chromium browser) is described in
+[Testing your data](/guide/install#testing-your-data).
 
 The [local offline builder](https://github.com/giloushaker/nr-builder) is
 another option, meant for testing data rather than making real rosters.

@@ -87,6 +87,19 @@ it. Rather than hiding a required option, preselect it with `defaultAmount`, or
 make the constraint **automatic** so NewRecruit resolves it, or invert the logic
 so the option is shown rather than hidden when it applies.
 
+## A mandatory option doesn't show ("the sergeant is missing")
+
+The builder hides **constant** selections — options the player has no decision
+to make about. A selection is constant when its amount is forced by equal `min`
+and `max` constraints (in parent, not `-1`) and everything beneath it is
+constant too. A mandatory squad leader with `min 1`, `max 1` and no choices of
+its own is the classic case: it is still in the unit, still counted, priced,
+and exported — just not shown as an option.
+
+Players can reveal these from the unit's menu with **Show Constant Options**.
+Nothing is wrong with the data; if you want the entry to always be visible,
+give it an actual choice to make.
+
 ## A unit's models stack or split oddly
 
 Extra per-model add and remove buttons, models that won't combine into one line,

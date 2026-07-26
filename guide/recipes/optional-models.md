@@ -24,3 +24,6 @@ model kind is its own entry, and the role comes from which root link is used.
   [Points that scale per model](/guide/recipes/points-per-model).
 - How models group into one line or split into separate stacks is controlled by
   the [collective](/guide/concepts/collective) flag.
+- A *mandatory* model (`min 1`, `max 1`, no choices) is hidden from the options
+  as a constant selection; see
+  [Troubleshooting](/guide/troubleshooting#a-mandatory-option-doesnt-show-the-sergeant-is-missing).

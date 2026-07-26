@@ -28,5 +28,6 @@ child selections"** on those conditions.
   a modifier on the unit rather than duplicating the unit; see
   [Army-wide limits](/guide/recipes/army-limits) and
   [Scope & Context](/guide/concepts/scope) for the conditions involved.
-- Large systems keep shared sub-faction content in a separate library catalogue
-  the faction files link to, which keeps each file smaller.
+- Large systems keep shared sub-faction content in a separate
+  [library catalogue](/guide/concepts/links#library-catalogues) the faction
+  files link to, which keeps each file smaller.

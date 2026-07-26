@@ -37,6 +37,24 @@ piece of it directly. Two approaches get the same result:
 - Split the definition into smaller shared pieces and link only the parts you
   want, rather than one large entry you wish you could edit.
 
+## Library catalogues
+
+To share entries across several catalogues, put them in a **library**
+catalogue. Marking a catalogue as a library keeps it out of the builder's
+faction list, so players cannot start an army from it directly.
+
+Other catalogues import a library with a **catalogue link**. The library's
+shared entries, profiles, and rules then become linkable from the importing
+catalogue, which adds its own root links for the pieces it offers. Ticking
+**Import Root Entries** on the catalogue link pulls in the library's root
+entries directly instead.
+
+The rule of thumb for where things live: the **game system** holds what every
+catalogue needs (cost types, profile types, categories, forces); a **library**
+holds what several factions share; a **catalogue** holds one faction's content.
+The relationship is one-way — an importing catalogue sees the library, but
+rules in the library cannot count selections in the catalogues that import it.
+
 ## Seeing what links to what
 
 The References panel lists every place an entry is used, and you can follow a

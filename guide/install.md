@@ -39,6 +39,20 @@ macOS support is not a priority, so expect the occasional rough edge.
 Builds are on the download page. Note the desktop builder is not tested on Linux;
 the website builder works in any Chromium-based browser.
 
+## Testing your data
+
+You will load work-in-progress data into a builder constantly, so set up the
+test loop with the rest of the tools:
+
+- On a Chromium-based browser (Chrome, Edge, and similar), the NewRecruit
+  website loads a system straight from a local folder with **Add from folder**,
+  and hot-reloads as you save. You edit in the data editor, save, and the build
+  updates without any commit or re-import. Firefox and Safari do not support
+  the folder access this relies on.
+- The desktop **Builder** does the same without an internet connection. It is
+  not tested on Linux or macOS and often lags behind the website version, so
+  prefer the website loop where you can.
+
 ## Git and GitHub
 
 Publishing your data, and editing an existing system, both use a normal git
