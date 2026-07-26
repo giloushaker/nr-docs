@@ -22,8 +22,9 @@ least 1 HQ — put `min` and `max` constraints on the category in the force. A
 minimum makes the army illegal until it is met; a maximum caps the slot. This is
 the usual battlefield-role structure.
 
-To keep a slot visible even while it is empty, tick **Show tracker** on the
-category (or its link in the force). The builder then always displays the
+To keep a slot visible even while it is empty, tick **Show tracker**
+<Badge type="tip" text="new 2026-07" /> on the category (or its link in the
+force). The builder then always displays the
 category with its count and limits, so players can see "Troops 0/6" before
 adding anything.
 

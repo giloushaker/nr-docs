@@ -25,4 +25,5 @@ cost at all if every body is counted the same way.
 ## Notes
 
 - To make a unit buy models in fixed blocks (five at a time, say), set the `step`
-  field on the model entry so its amount changes in that increment.
+  field <Badge type="tip" text="v1.4.2" /> on the model entry so its amount
+  changes in that increment.

@@ -39,17 +39,18 @@ one level down from its scope by default, so if the entries it should count sit
 deeper, tick "and all child selections" to make it recurse. A rule that looks
 correct but does nothing is usually missing this.
 
-If that is not it, inspect the selection directly. In the builder, middle-click
-the selection to load it into a debug variable, then open the browser's dev tools
-console (in Chrome, More tools → Developer tools → Console). Assign
-`let state = $debugOption.state` and the console autocompletes the node's
-properties. Two useful calls:
+::: details If that is not it: inspect the selection with the browser console
+In the builder, middle-click the selection to load it into a debug variable,
+then open the browser's dev tools console (in Chrome, More tools → Developer
+tools → Console). Assign `let state = $debugOption.state` and the console
+autocompletes the node's properties. Two useful calls:
 
 - `state.print_modifiers()` — the modifiers applied to the node
 - `state.print_extra_constraints()` — the constraints applied to it
 
 This shows what the engine actually computed, which usually points at the wrong
 scope, the missing recurse flag, or a condition that never matched.
+:::
 
 ## My data doesn't update for players
 

@@ -39,7 +39,7 @@ error. It also locks the per-model add and remove buttons on fixed-size units so
 they cannot be built into an illegal state. `automatic` is NewRecruit-only. Use
 it where the correct selection is unambiguous, not on everything.
 
-## Custom messages
+## Custom messages <Badge type="tip" text="v1.3.31" />
 
 A constraint can carry a `message` shown when it is broken, so the player reads a
 plain-language reason instead of a generic limit error.

@@ -8,6 +8,8 @@ export default defineConfig({
   // user/org root site, change this to "/".
   base: "/nr-docs/",
   srcExclude: ["research/**", "README.md"],
+  lastUpdated: true,
+  sitemap: { hostname: "https://giloushaker.github.io/nr-docs/" },
   themeConfig: {
     nav: [
       { text: "Guide", link: "/guide/getting-started" },
