@@ -28,12 +28,12 @@ rather than a stat column.
 
 ## Characteristic formatting
 
-Characteristic types support two display helpers:
+A characteristic type has two optional fields worth knowing:
 
-- **Formatting Rules** (`formatRules`) — how a value is shown, for example
-  appending a unit like the `"` on a movement value.
-- **Default Value** (`defaultValue`) — a value the editor prefills for a new
-  profile.
+- **Formatting Rules** (`formatRules`) — control how values are displayed, for
+  example appending a unit like the `"` on a movement value.
+- **Default Value** (`defaultValue`) — what the editor prefills when you create
+  a new profile.
 
 ## Characteristic kinds
 
