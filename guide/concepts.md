@@ -6,6 +6,9 @@ NewRecruit data is built from a small set of pieces.
   and the forces that structure an army. One per game.
 - Catalogue — a faction's content: its units, wargear, and rules. A system
   usually has many catalogues.
+- Library catalogue — a catalogue marked as a **library**: shared content that
+  other catalogues import rather than a playable faction. See
+  [Library catalogues](/guide/concepts/links#library-catalogues).
 
 Each is stored as XML (`.gst` for a system, `.cat` for a catalogue), zipped XML,
 or JSON. The format is your choice and doesn't change the data; JSON gives the
