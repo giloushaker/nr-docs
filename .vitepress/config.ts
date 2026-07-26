@@ -13,6 +13,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: "Guide", link: "/guide/getting-started" },
+      { text: "Troubleshooting", link: "/guide/troubleshooting" },
       { text: "API", link: "/api/" },
     ],
     sidebar: {
@@ -29,30 +30,31 @@ export default defineConfig({
           text: "Understanding NR Data",
           items: [
             { text: "Core Concepts", link: "/guide/concepts" },
-            { text: "Scope & Context", link: "/guide/concepts/scope" },
-            { text: "Links & Shared Entries", link: "/guide/concepts/links" },
             { text: "Profiles & Rules", link: "/guide/concepts/profiles" },
-            { text: "Conditions", link: "/guide/concepts/conditions" },
+            { text: "Scope & Context", link: "/guide/concepts/scope" },
             { text: "Constraints", link: "/guide/concepts/constraints" },
+            { text: "Conditions", link: "/guide/concepts/conditions" },
             { text: "Modifiers", link: "/guide/concepts/modifiers" },
-            { text: "Associations", link: "/guide/concepts/associations" },
+            { text: "Links & Shared Entries", link: "/guide/concepts/links" },
             { text: "Collective", link: "/guide/concepts/collective" },
+            { text: "Associations", link: "/guide/concepts/associations" },
             {
               text: "In-text References",
               link: "/guide/concepts/in-text-references",
             },
             { text: "Known Limitations", link: "/guide/limitations" },
+            { text: "Troubleshooting", link: "/guide/troubleshooting" },
           ],
         },
         {
           text: "Recipes",
           items: [
             { text: "Overview", link: "/guide/recipes/" },
+            { text: "Weapon options", link: "/guide/recipes/weapon-options" },
             {
               text: "Points that scale per model",
               link: "/guide/recipes/points-per-model",
             },
-            { text: "Weapon options", link: "/guide/recipes/weapon-options" },
             {
               text: "Optional squad models",
               link: "/guide/recipes/optional-models",
@@ -61,16 +63,23 @@ export default defineConfig({
               text: "Show or hide an option",
               link: "/guide/recipes/conditional-options",
             },
+            { text: "Army-wide limits", link: "/guide/recipes/army-limits" },
             {
               text: "Sub-factions and allegiances",
               link: "/guide/recipes/sub-factions",
             },
-            { text: "Army-wide limits", link: "/guide/recipes/army-limits" },
-            { text: "Child forces", link: "/guide/recipes/child-forces" },
             {
               text: "Reuse a mount across characters",
               link: "/guide/recipes/shared-mounts",
             },
+            { text: "Child forces", link: "/guide/recipes/child-forces" },
+          ],
+        },
+        {
+          text: "Publishing",
+          items: [
+            { text: "Publishing Your Data", link: "/guide/publishing" },
+            { text: "Best Practices", link: "/guide/best-practices" },
           ],
         },
         {
@@ -82,14 +91,6 @@ export default defineConfig({
               text: "Custom Export Templates",
               link: "/guide/advanced/export-templates",
             },
-          ],
-        },
-        {
-          text: "Publishing",
-          items: [
-            { text: "Publishing Your Data", link: "/guide/publishing" },
-            { text: "Best Practices", link: "/guide/best-practices" },
-            { text: "Troubleshooting", link: "/guide/troubleshooting" },
           ],
         },
         {
