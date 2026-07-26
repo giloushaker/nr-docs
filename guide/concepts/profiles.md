@@ -35,12 +35,36 @@ Characteristic types support two display helpers:
 - **Default Value** (`defaultValue`) — a value the editor prefills for a new
   profile.
 
+## Characteristic kinds
+
+A characteristic type can also carry a **Kind**, which tells NewRecruit what
+the column *is*, not just how it looks:
+
+- **Description / Long Text** (`longText`) — renders as a full-width text cell
+  under the stat line instead of a stat column. Use it for ability text inside
+  a profile. (A very long value gets this treatment automatically; the kind
+  makes it explicit.)
+- **Wound** — marks the wounds column, so play mode's wound tracking reads it.
+  Works together with the entry's Type being `model`; see
+  [entry types](/guide/concepts/scope#type-scopes).
+- **Annotation** (`annotation`) — a short parenthetical value, read by exports
+  rather than shown as a stat column.
+
+Kinds exist at both levels: the profile type's kind says what the whole profile
+is (weapon, ability — see [above](#the-profile-type-kind)), the characteristic
+type's kind says what one column is.
+
 ## Attributes
 
 Attributes are a second, hidden characteristic-like axis on profiles, defined by
-attribute types. They are not shown to players but can be read by exports and
-scripts — useful for values a template or script needs without adding them to the
-visible stat line.
+attribute types. Players never see them; only export templates and scripts read
+them.
+
+Most data doesn't need them — if a value matters to the player, it belongs in a
+characteristic, and if it drives rules, it belongs in the data model
+(categories, costs, constraints). Reach for attributes only to encode
+export-only metadata, such as a value a custom template needs to lay out a
+card.
 
 ## Reordering characteristics
 
