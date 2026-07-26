@@ -61,7 +61,6 @@ A few causes, in order of likelihood:
   show.
 - The player **added the system themselves** with Add from Github. Those only
   update when the player refreshes NewRecruit (or closes and reopens on mobile).
-  Systems on the built-in game list update on their own within about a minute.
 
 See [Publishing Your Data](/guide/publishing).
 

@@ -26,8 +26,10 @@ roster. See [Scope & Context](/guide/concepts/scope).
 
 For a one-time configuration or "header" entry that should drop out of the
 add-unit list after it is in the army, set it hidden with a condition that it is
-already present — using the `header` childId, testing for at least one in the
-force. It stays in the army but stops cluttering the list.
+already present — an instance-of test on the `header` childId at **`Self`
+scope**, so the entry only checks itself. Keep it on `Self`: at any wider scope
+`header` matches **every** header entry in scope, so adding one configuration
+entry would hide them all. (Testing the entry's own id works too.)
 
 ## Forbid instead of hide
 

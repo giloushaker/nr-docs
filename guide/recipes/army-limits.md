@@ -55,9 +55,8 @@ against the cost limit, plain `pts` measures against current spend.
 
 Use `pts Limit`. "Max 50% on Elites" means half the game size. With `pts` it
 would mean half of whatever is currently in the list, which changes with every
-unit added.
-
-Constraints that read the game size only work at **roster** scope.
+unit added. The game-size side always comes from the roster, whatever the
+constraint's scope; the scope only decides what is counted against it.
 
 The same works for a **minimum** percentage, such as "at least 25% on Core": use
 a `min` percentage constraint against `pts limit`.

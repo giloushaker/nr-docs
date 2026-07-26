@@ -52,8 +52,11 @@ entries directly instead.
 The rule of thumb for where things live: the **game system** holds what every
 catalogue needs (cost types, profile types, categories, forces); a **library**
 holds what several factions share; a **catalogue** holds one faction's content.
-The relationship is one-way — an importing catalogue sees the library, but
-rules in the library cannot count selections in the catalogues that import it.
+One direction to keep in mind: when authoring, a library cannot reference
+specific entries that live in the catalogues importing it — it doesn't know
+them. At runtime its rules resolve where they are used, so scope- or
+category-based conditions on a library entry still count the importing
+roster's selections normally.
 
 ## Seeing what links to what
 

@@ -26,7 +26,8 @@ Setting and counting:
 Arithmetic, for numeric fields:
 
 - `multiply`, `divide`, `modulo`, `power`, `exponent`
-- `floor`, `ceil` — round down or up
+- `floor`, `ceil` — clamp to a minimum or maximum: if the value falls below the
+  floor or above the ceiling, it is set to that bound (not decimal rounding)
 - `triangular` — triangular scaling, for stepped tables
 
 Text, for the name and other text fields:
@@ -70,9 +71,11 @@ profile, a rule, a force. The full set:
 ## When modifiers apply
 
 Without conditions a modifier always applies. With conditions it applies only
-when they pass. Modifiers run in an order set by their type and their order in
-the data; where the order matters, turn off sorting and arrange them by hand (see
-[Sorting](/guide/advanced/sorting)).
+when they pass. The operation type sets a fixed run order — set → append/prepend
+→ increment/arithmetic → floor/ceil → cumulative/replace — and within the same
+tier, modifiers run in data order. Hand-arranging (turn off sorting, see
+[Sorting](/guide/advanced/sorting)) therefore only decides ties between
+modifiers of the same tier; it cannot make an increment run before a set.
 
 ## Repeats
 
@@ -105,10 +108,9 @@ displays.
 - child selections — selections nested under the scope
 - child forces — nested forces
 - recursive — the whole subtree below the scope
-- associated nodes — follow an [association](/guide/concepts/associations) to its
-  target
-- grouped associations — follow the associations in a group, with a set
-  traversal depth
+- associated nodes — follow an [association](/guide/concepts/associations) to
+  its target, with a set traversal depth
+- grouped associations — reach every member of an association group
 
 A useful way to hold it in your head: scope travels **up** to find a starting
 point, and `affects` travels **down** from there to the nodes that change. Add a

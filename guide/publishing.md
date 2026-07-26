@@ -52,7 +52,7 @@ To modify existing data (a "homebrew"):
 How an update reaches players depends on how they got the system:
 
 - **Systems on the built-in game list** are re-checked by the NewRecruit server
-  roughly hourly, so pushing a commit (or cutting a release) reaches players on
+  roughly hourly, so pushing a commit (or making a release) reaches players on
   its own.
 - **Systems a player added themselves** with **Add from Github** are only checked
   when first added. The player has to refresh NewRecruit (or fully close and

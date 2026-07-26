@@ -6,12 +6,14 @@ looks in the builder and how its options behave.
 
 ## What it does
 
-Mark a selection **collective** and identical copies collapse into a single line
-with a count, like "10× Trooper", and the builder shows a counter instead of
-separate add and remove buttons for each model. Without it, each model is its own
-stack that the player adds and configures individually. These individually
-configurable stacks are also called **sub units** in release notes and
-discussion.
+Marking selections **collective** lets identical copies collapse into a single
+line with a count, like "10× Trooper", and the builder shows a counter instead
+of separate add and remove buttons for each model. A model collapses this way
+when it can be taken more than once and all of its own options are collective —
+the flag on an option controls whether its **parent** can collapse. Without
+that, each model is its own stack that the player adds and configures
+individually. These individually configurable stacks are also called
+**sub units** in release notes and discussion.
 
 ## Identical models: make everything collective
 

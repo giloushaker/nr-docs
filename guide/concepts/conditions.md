@@ -37,7 +37,8 @@ A condition group holds several conditions and combines them:
 
 - `and` — all must pass
 - `or` — any must pass
-- `not` — none must pass
+- `not` — not all pass (for a single condition, plain negation; with several,
+  it fails only when every one passes)
 - `count` — a number of the child conditions pass, with a `min`/`max`
 
 Groups can nest, so you can build "A and (B or C)".

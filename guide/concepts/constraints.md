@@ -35,9 +35,9 @@ minus one. If you genuinely need a negative value, set the constraint's
 
 Mark a constraint **automatic** and NewRecruit resolves the selection itself to
 satisfy it, auto-adding or adjusting the choice rather than only flagging an
-error. It also locks the per-model add and remove buttons on fixed-size units so
-they cannot be built into an illegal state. `automatic` is NewRecruit-only. Use
-it where the correct selection is unambiguous, not on everything.
+error. This is what makes forced selections (equal `min` and `max`) safe: the
+builder fills them in itself instead of reporting an error the player has to
+fix. Use it where the correct selection is unambiguous, not on everything.
 
 ## Custom messages <Badge type="tip" text="v1.3.31" />
 

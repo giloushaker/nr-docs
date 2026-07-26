@@ -18,8 +18,9 @@ recorded. Rules on either side can then react to it.
 - Association conditions test whether an association exists, and can refer back
   to the source, meaning the selection that attached.
 - A filter restricts what a selection is allowed to associate with.
-- A default or auto-check can set the association automatically when the rules
-  leave only one valid target.
+- Required associations (with a minimum) are auto-filled from the available
+  valid targets, so the player only has to pick when they want a different
+  target than the default.
 
 ## Grouped associations
 

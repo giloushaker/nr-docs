@@ -24,10 +24,10 @@ it, and it accepts comma-separated values for multiple default stacks.
 
 ## Every model takes the same weapon
 
-If a choice must be identical across a whole unit rather than per model, mark the
-constraint **automatic**. NewRecruit then resolves the selection itself and locks
-the per-model add/remove buttons, so the unit can't be built into an illegal
-mix. `automatic` is NewRecruit-only.
+If a choice must be identical across a whole unit rather than per model, mark
+the weapon options **collective** so the models stay grouped into one stack and
+the swap is made once for all of them; see
+[Collective](/guide/concepts/collective).
 
 ## Notes
 

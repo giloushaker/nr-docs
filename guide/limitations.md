@@ -8,13 +8,14 @@ time spent trying to make them work.
 A selection group can't carry a cost. Put the cost on the selection entries
 inside the group instead.
 
-## Costs and constraints go on selection entries only
+## Rules and profiles can't carry costs or constraints
 
-Only a selection entry can carry a cost or a constraint. A rule or a profile
-can't have one directly. If you need a cost or a limit tied to a rule, wrap it in
-a selection entry and put the cost or constraint on that entry. This one catches
-people out often, so reach for a selection entry whenever something needs a price
-or a limit.
+Constraints can sit on selection entries, groups, forces, and categories, and
+costs on entries, forces, and categories — but a rule or a profile can't have
+either directly. If you need a cost or a limit tied to a rule, wrap it in a
+selection entry and put the cost or constraint on that entry. This one catches
+people out often, so reach for a selection entry whenever something needs a
+price or a limit.
 
 ## A condition can't read a characteristic value
 
