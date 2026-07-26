@@ -68,7 +68,7 @@ finding tools you didn't know existed.
 - **Arithmetic condition groups** (v1.3.28, 2025-12) — add, subtract, multiply,
   divide, modulo, power, min, max, plus comparisons: compute values inside
   logic natively. Retires the old hidden-cost workaround.
-  → [Conditions](/guide/concepts/conditions#combining-conditions-condition-groups)
+  → [Condition-Group Maths](/guide/advanced/condition-maths)
 - **The `before` condition** (v1.3.28, 2025-12) — position-dependent rules,
   such as the third copy costing more.
   → [Conditions](/guide/concepts/conditions#local-condition-groups)
@@ -92,7 +92,7 @@ finding tools you didn't know existed.
   → [Conditions](/guide/concepts/conditions)
 - **Shared force entries and force links** (v1.3.19, 2025-07) — define a force
   once under Shared Force Entries, link it wherever it appears; enables nested
-  child forces. → [Child forces](/guide/recipes/child-forces)
+  child forces. → [Forces](/guide/concepts/forces)
 - **Custom export templates** (2024-11 → 2025-07) — XML/HTML/CSS templates with
   roster queries, string helpers, grouping, and embedded JavaScript; community
   template repository.
@@ -144,7 +144,7 @@ finding tools you didn't know existed.
   the joining string (default space).
   → [Modifiers](/guide/concepts/modifiers#operation-types)
 - **Renameable "Child Forces" label** (v1.1.148, 2024-09).
-  → [Child forces](/guide/recipes/child-forces)
+  → [Forces](/guide/concepts/forces#child-forces)
 - **Hidden modifiers on cost types** (v1.1.145, 2024-08) — conditionally hide a
   cost type. → [Modifiers](/guide/concepts/modifiers#fields)
 - **No Index** (v1.1.144, 2024-08) — keep a name out of rules auto-linking.

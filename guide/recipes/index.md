@@ -23,5 +23,7 @@ A few terms used throughout:
 - [Show or hide an option based on another choice](/guide/recipes/conditional-options)
 - [Sub-factions and allegiances](/guide/recipes/sub-factions)
 - [Army-wide limits](/guide/recipes/army-limits)
-- [Child forces](/guide/recipes/child-forces)
 - [Reuse a mount across characters](/guide/recipes/shared-mounts)
+
+For sub-forces and allied detachments, see
+[Forces § Child forces](/guide/concepts/forces#child-forces).

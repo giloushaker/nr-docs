@@ -25,8 +25,9 @@ such as a model's Wounds or Strength.
 
 ## Complex maths is awkward
 
-Condition groups can do arithmetic — add, multiply, min/max, and comparisons — so
-simple calculations and checks are possible. But there is no easy way to express
-anything complex: multi-step formulas are fiddly to assemble and hard to follow.
-Keep computed logic simple; if a rule needs elaborate maths, it is probably not
-worth forcing into the data.
+Condition groups can do arithmetic — add, multiply, min/max, and comparisons —
+so simple calculations and checks are possible; see
+[Condition-Group Maths](/guide/advanced/condition-maths). But there is no easy
+way to express anything complex: multi-step formulas are fiddly to assemble and
+hard to follow. Keep computed logic simple; if a rule needs elaborate maths, it
+is probably not worth forcing into the data.

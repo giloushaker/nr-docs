@@ -45,8 +45,9 @@ Groups can nest, so you can build "A and (B or C)".
 
 Groups can also compute and compare numbers, with types like `add`, `subtract`,
 `multiply`, `divide`, `modulo`, `power`, `min`, and `max`, tested with `greater`,
-`less`, `equal`, and so on. Simple calculations and comparisons work this way, but
-anything beyond that is awkward to build — see
+`less`, `equal`, and so on. Simple calculations and comparisons work this way —
+see [Condition-Group Maths](/guide/advanced/condition-maths) for a worked
+example — but anything beyond that is awkward to build; see
 [Known Limitations](/guide/limitations#complex-maths-is-awkward).
 
 ## Local condition groups

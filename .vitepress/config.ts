@@ -29,6 +29,7 @@ export default defineConfig({
           text: "Understanding NR Data",
           items: [
             { text: "Core Concepts", link: "/guide/concepts" },
+            { text: "Forces", link: "/guide/concepts/forces" },
             { text: "Profiles & Rules", link: "/guide/concepts/profiles" },
             { text: "Scope & Context", link: "/guide/concepts/scope" },
             { text: "Constraints", link: "/guide/concepts/constraints" },
@@ -71,7 +72,6 @@ export default defineConfig({
               text: "Reuse a mount across characters",
               link: "/guide/recipes/shared-mounts",
             },
-            { text: "Child forces", link: "/guide/recipes/child-forces" },
           ],
         },
         {
@@ -84,6 +84,10 @@ export default defineConfig({
         {
           text: "Advanced",
           items: [
+            {
+              text: "Condition-Group Maths",
+              link: "/guide/advanced/condition-maths",
+            },
             { text: "Sorting", link: "/guide/advanced/sorting" },
             { text: "Editor Scripts", link: "/guide/advanced/scripts" },
             {

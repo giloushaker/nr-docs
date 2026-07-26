@@ -26,6 +26,8 @@ cleanest git history (see [Best Practices](/guide/best-practices#save-catalogues
 
 The ideas that take the most getting used to have their own pages:
 
+- [Forces](/guide/concepts/forces) — the containers an army is built from, and
+  how categories make units available in them.
 - [Scope & Context](/guide/concepts/scope) — which part of the army a condition
   or constraint looks at.
 - [Links & Shared Entries](/guide/concepts/links) — defining something once and
