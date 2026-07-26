@@ -13,7 +13,6 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: "Guide", link: "/guide/getting-started" },
-      { text: "Troubleshooting", link: "/guide/troubleshooting" },
       { text: "API", link: "/api/" },
     ],
     sidebar: {
