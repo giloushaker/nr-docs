@@ -82,7 +82,8 @@ https://newrecruit.eu/app/MySystems?addSystem=ORG%2FREPO&ref=HEAD
 
 Adding a system from GitHub is enough for anyone to load it by URL or install
 link. Getting it into NewRecruit's built-in game list, where players find it
-without a link, is a separate step: ask on the NewRecruit Discord.
+without a link, is a separate step: ask on the
+[NewRecruit Discord](https://discord.gg/cCtqGbugwb).
 
 A system is expected to roughly meet these before it is listed:
 

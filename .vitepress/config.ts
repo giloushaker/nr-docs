@@ -102,6 +102,7 @@ export default defineConfig({
       "/api/": [{ text: "API", items: [{ text: "Overview", link: "/api/" }] }],
     },
     socialLinks: [
+      { icon: "discord", link: "https://discord.gg/cCtqGbugwb" },
       { icon: "github", link: "https://github.com/giloushaker/nr-docs" },
     ],
     editLink: {
