@@ -55,6 +55,8 @@ it is shown:
 - `{scope}` — the name of the scope
 - `{field}` — the field being counted (selections, points, and so on)
 - `{%}` — a percent sign when the constraint is a percentage
+- `{self}`, `{parent}`, `{group}`, `{unit}`, `{model}`, `{roster}` and other
+  scope names — replaced with the matching node's name
 - `{<id>}` — any entry or field id, replaced with its name
 
 Text wrapped in `**double asterisks**` is highlighted, and line breaks are kept.

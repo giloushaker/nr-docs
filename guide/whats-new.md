@@ -56,6 +56,9 @@ finding tools you didn't know existed.
 - **Repeats on condition groups** (v1.3.30, 2026-01) — any condition group can
   repeat, not just local ones.
   → [Conditions](/guide/concepts/conditions#combining-conditions-condition-groups)
+- **Primary-category cost modifiers** (2026-04) — modifiers can change the
+  cost of a unit's primary category.
+  → [Army-wide limits](/guide/recipes/army-limits)
 - **Cumulative modifiers** (v1.3.29, 2026-01) — add/multiply/power that combine
   across repeated applications.
   → [Modifiers](/guide/concepts/modifiers#operation-types)
@@ -76,6 +79,9 @@ finding tools you didn't know existed.
   → [Profiles & Rules](/guide/concepts/profiles#the-profile-type-kind)
 - **Force readme** (v1.3.25, 2025-11) — a readme text on forces, changeable by
   modifiers. → [Modifiers](/guide/concepts/modifiers#fields)
+- **The `exportable` field** (v1.3.24, 2025-09) — control whether an entry
+  appears in exports.
+  → [Custom Export Templates](/guide/advanced/export-templates)
 - **Multiply, divide, and modulo modifiers** (v1.3.23, 2025-09).
   → [Modifiers](/guide/concepts/modifiers#operation-types)
 - **Duplicate-finder scripts** (v1.3.22, 2025-09) — shipped
@@ -175,8 +181,11 @@ finding tools you didn't know existed.
 - **Paste as link (Ctrl+L); flatten groups** (2024-01) — paste a copied entry
   as a link to it; flatten a group's children into its parent.
   → [Links & Shared Entries](/guide/concepts/links)
-- **Profile subType** (v1.1.95, 2024-01) — crew/mount sub-typing on model
-  profiles. → [Profiles & Rules](/guide/concepts/profiles)
+- **Profile subType** (v1.1.95, 2024-01/02) — `crew`, `mount`, and
+  `unit-group` sub-typing on model profiles.
+  → [Profiles & Rules](/guide/concepts/profiles)
+- **Sort profile types** (v1.1.94, 2024-01) — a popup to reorder a system's
+  profile types. → [Sorting](/guide/advanced/sorting)
 
 ## 2023
 
