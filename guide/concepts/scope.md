@@ -28,7 +28,7 @@ The common scopes:
 | `Force` | the force |
 | `Roster` | the whole army |
 | `Ancestor` | this node and every parent above it; used for instance-of (keyword) checks |
-| `Primary Catalogue` | the catalogue selected for the node's force |
+| `Primary Catalogue` | the catalogue (faction) selected for the node's force |
 | `Primary Category` | the nearest category above the node (its containing selection's category slot) |
 
 Two details matter here:
