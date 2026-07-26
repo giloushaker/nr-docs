@@ -80,7 +80,9 @@ Set a cost on an entry by adding a cost of that type and a value. To make a unit
 cost more as it grows, price the models rather than the unit; see
 [Points that scale per model](/guide/recipes/points-per-model).
 
-To give the game a default army size, set a `defaultCostLimit` on the cost type.
+To give the game a default army size, set a `defaultCostLimit` on the cost
+type — it prefills the cost limit when a player creates a roster (they can
+still change it).
 
 ## 11. Add force limits
 

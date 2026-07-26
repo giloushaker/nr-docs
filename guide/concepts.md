@@ -24,6 +24,12 @@ cleanest git history (see [Best Practices](/guide/best-practices#save-catalogues
 - Modifiers — changes to values (cost, name, characteristics) applied when
   conditions are met.
 
+A note on finding things in the editor: when these pages name a field or flag
+(Collective, Aliases, Show tracker, Affects...), it lives in the **right-hand
+panel** shown when the node is selected in the tree. Creating things and
+structural actions — new entries, Move To, References — are on the node's
+**right-click menu**.
+
 The ideas that take the most getting used to have their own pages:
 
 - [Forces](/guide/concepts/forces) — the containers an army is built from, and

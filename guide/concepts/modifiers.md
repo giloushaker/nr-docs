@@ -100,9 +100,9 @@ that adds +1 Attack to every model in the unit sits on the upgrade but changes
 the models.
 
 A relative modifier has an **Affects** setting that says what it changes: a
-scope plus a target within it. That is the label to look for in the editor —
-"relative modifier" is this guide's name for the pattern, not something the UI
-displays.
+scope plus a target within it. That is the label to look for in the editor — a
+field in the modifier's query panel; "relative modifier" is this guide's name
+for the pattern, not something the UI displays.
 
 - `self` — the node itself, which is just a normal modifier
 - child selections — selections nested under the scope

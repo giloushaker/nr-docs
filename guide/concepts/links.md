@@ -28,16 +28,25 @@ A link cannot remove or replace the children that come from the definition.
 ## When you want to override part of a definition
 
 The format has no true inheritance, so you cannot link an entry and override a
-piece of it directly. Three approaches get the same result:
+piece of it directly. But some of it needs no workaround at all:
 
-- Add a conditional modifier on the link to change a value, hide an option, or
-  set a different cost for that use only.
-- Keep the shared definition free of cost and category, and put those on each
-  local link instead. This is how one mount definition serves several
-  characters who pay different prices for it: the shared entry supplies the
-  rules and profiles, each character's link supplies that character's cost.
-- Split the definition into smaller shared pieces and link only the parts you
-  want, rather than one large entry you wish you could edit.
+- **A different cost needs no modifier.** A link carries its own costs, and a
+  cost set on the link overrides the definition's cost of the same type for
+  that use. This is how one mount definition serves characters who pay
+  different prices: the shared entry supplies the rules and profiles, each
+  character's link supplies the price and category.
+- A link can likewise add its own constraints, conditions, and child entries
+  for that use only.
+
+For the rest:
+
+- A link's own **name field does nothing** — to rename the entry for one use,
+  put a `set` name modifier on the link.
+- Put a conditional modifier on the link for anything conditional, or for
+  values the link cannot carry directly — changing a characteristic, or hiding
+  an option that comes from the definition.
+- Or split the definition into smaller shared pieces and link only the parts
+  you want, rather than one large entry you wish you could edit.
 
 ## Library catalogues
 
@@ -62,7 +71,8 @@ roster's selections normally.
 
 ## Seeing what links to what
 
-The References panel lists every place an entry is used, and you can follow a
+Right-click an entry and choose **References** (the item shows the count) — the
+right-hand panel then lists every place the entry is used, and you can follow a
 link to jump to its target. The panel shows two lists: structural links, and
 uses from conditions, constraints, modifiers, and repeats. The reference count
 on a node includes both, so a rule that mentions an entry counts toward it.

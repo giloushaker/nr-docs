@@ -16,8 +16,10 @@ may or may not matter to you.
 
 ## Sort configuration
 
-The sort configuration sits on an entry that contains several child entries. If
-you are looking at a link, follow it to its target to reach the configuration.
+The sort configuration is the **Childs Order** fieldset in the right-hand panel
+of the entry that contains the children (it appears once the entry has more
+than one child). If you are looking at a link, follow it to its target to reach
+the configuration.
 
 For anything larger than a handful of entries, the editor can mass-sort a group's
 children from a small configuration. Each line is one rule, and rules stack: the
