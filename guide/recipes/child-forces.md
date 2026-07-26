@@ -13,6 +13,12 @@ parent force that ties them together. Reach for this when you need multiple smal
 forces with a shared parent that carries an attribute uniting them, rather than
 one flat force.
 
+Forces can be defined once and reused the same way as selection entries: define
+the force under **Shared Force Entries** and point at it with a **force entry
+link** wherever it appears — under the parent force, or in several forces at
+once. This is the same define-once-link-everywhere idea as
+[shared entries](/guide/concepts/links).
+
 ## Hiding child forces that don't belong
 
 A child force should only appear in the catalogue it belongs to. Set the child

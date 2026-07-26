@@ -93,6 +93,7 @@ export default defineConfig({
         {
           text: "Reference",
           items: [
+            { text: "What's New", link: "/guide/whats-new" },
             { text: "Supported Systems", link: "/guide/reference/supported-systems" },
             { text: "BSData Repositories", link: "/guide/reference/bsdata-repos" },
           ],
@@ -101,8 +102,12 @@ export default defineConfig({
       "/api/": [{ text: "API", items: [{ text: "Overview", link: "/api/" }] }],
     },
     socialLinks: [
-      { icon: "github", link: "https://github.com/giloushaker/nr-editor" },
+      { icon: "github", link: "https://github.com/giloushaker/nr-docs" },
     ],
+    editLink: {
+      pattern: "https://github.com/giloushaker/nr-docs/edit/master/:path",
+      text: "Edit this page on GitHub",
+    },
     search: { provider: "local" },
   },
 });
