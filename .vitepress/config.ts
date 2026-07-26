@@ -68,10 +68,6 @@ export default defineConfig({
               text: "Sub-factions and allegiances",
               link: "/guide/recipes/sub-factions",
             },
-            {
-              text: "Reuse a mount across characters",
-              link: "/guide/recipes/shared-mounts",
-            },
           ],
         },
         {

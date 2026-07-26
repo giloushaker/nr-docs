@@ -2,8 +2,6 @@
 
 A weapon, rule, or unit is usually defined once and used in many places. Instead
 of copying the definition, you define it once and point at it with a link.
-Knowing what a link is, and what editing one changes, avoids a common surprise
-where a change appears everywhere at once.
 
 ## Definitions and links
 
@@ -30,10 +28,14 @@ A link cannot remove or replace the children that come from the definition.
 ## When you want to override part of a definition
 
 The format has no true inheritance, so you cannot link an entry and override a
-piece of it directly. Two approaches get the same result:
+piece of it directly. Three approaches get the same result:
 
 - Add a conditional modifier on the link to change a value, hide an option, or
   set a different cost for that use only.
+- Keep the shared definition free of cost and category, and put those on each
+  local link instead. This is how one mount definition serves several
+  characters who pay different prices for it: the shared entry supplies the
+  rules and profiles, each character's link supplies that character's cost.
 - Split the definition into smaller shared pieces and link only the parts you
   want, rather than one large entry you wish you could edit.
 

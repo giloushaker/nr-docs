@@ -37,13 +37,16 @@ slot visible with its count and limits even while empty.
 
 ## What a force can carry
 
-Besides category links, a force entry can have:
+Besides category links and child forces, a force entry can have:
 
 - **Constraints** — for example limiting how many of the force the roster may
   take.
-- **Costs** — a price for taking the force itself, changeable by modifiers.
-- **Modifiers** — a force is a valid modifier target: name, hidden, costs,
-  constraints, error/warning/info, and the **readme** text shown to the player.
+- **Costs** — a price for taking the force itself.
+- **Readme** — text shown to the player on the force, the place to explain how
+  the detachment works and what it grants.
+- **Rules and profiles** — info attached to the force is displayed with it.
+- **Modifiers** — targeting its name, hidden flag, costs, constraints, readme,
+  or error/warning/info messages.
 
 ## Child forces
 
