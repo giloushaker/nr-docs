@@ -51,8 +51,9 @@ finding tools you didn't know existed.
   can explain itself and carry a per-slot cost.
   → [In-text References](/guide/concepts/in-text-references#category-descriptions),
   [Army-wide limits](/guide/recipes/army-limits)
-- **Leader-style association groups** (v1.3.31, 2026-04) — action and splitting
-  behavior on associations. → [Associations](/guide/concepts/associations)
+- **Leader-style grouped associations** (v1.3.31, 2026-04) — action and
+  splitting behavior on associations.
+  → [Associations](/guide/concepts/associations)
 - **Repeats on condition groups** (v1.3.30, 2026-01) — any condition group can
   repeat, not just local ones.
   → [Conditions](/guide/concepts/conditions#combining-conditions-condition-groups)
@@ -156,7 +157,7 @@ finding tools you didn't know existed.
   → [Best Practices](/guide/best-practices#leave-todos-and-warnings-in-the-data)
 - **The `negative` constraint flag** (v1.1.135, 2024-05) — `-1` means "no
   limit" unless you opt in to a real negative.
-  → [Constraints](/guide/concepts/constraints#the-value--1)
+  → [Constraints](/guide/concepts/constraints#the-value-1)
 - **Type scopes** (v1.1.131, 2024-05) — count within the nearest unit, model,
   or upgrade, whatever the nesting.
   → [Scope](/guide/concepts/scope#type-scopes)

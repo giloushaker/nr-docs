@@ -11,8 +11,7 @@ sits on, like any other condition.
 ::: warning Rough edges
 This is honestly a clunky tool: assembling anything beyond a single comparison
 is fiddly, and the result is hard to read back. Use it for simple computed
-checks and keep a comment nearby. It is still **dramatically** better than the
-old workaround shown at the bottom of this page.
+checks and keep a comment nearby. 
 :::
 
 ## Worked example: "no more X than Y"
@@ -28,26 +27,6 @@ old workaround shown at the bottom of this page.
 The group compares the two counts and the error appears only while the first
 exceeds the second. The same shape handles ratios and derived values: compute
 with an arithmetic group, compare with a comparison group, nest as needed.
-
-## The old way (don't do this anymore)
-
-::: details How this rule had to be built before arithmetic groups
-An `or` group under the error modifier, containing one `and` group for **every
-possible combination** where Poxwalkers exceed Marines. With both being Troops
-in a 6-slot army:
-
-- 1 Poxwalker, 0 Marines
-- 2 Poxwalkers, 0 Marines
-- 3 Poxwalkers, 0 Marines
-- 4 Poxwalkers, 0 Marines
-- 5 Poxwalkers, 0 Marines
-- 6 Poxwalkers, 0 Marines
-- 2 Poxwalkers, 1 Marine
-- …and so on, twelve groups in all.
-
-Not elegant, but it worked. If you maintain data that still contains this
-pattern, a single `greater` group replaces the whole pile.
-:::
 
 ## Notes
 

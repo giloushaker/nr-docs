@@ -13,7 +13,7 @@ roster's cost limit), and **"and all child selections"** to reach nested
 entries. Constraint evaluation works the same way as condition evaluation, so
 everything on the [Scope & Context](/guide/concepts/scope) page applies here too.
 
-A `self`-scoped constraint can also target a specific **childId**, so it limits a
+A `Self`-scoped constraint can also target a specific **childId**, so it limits a
 particular entry within the node itself rather than the node as a whole.
 
 ## Minimum and maximum

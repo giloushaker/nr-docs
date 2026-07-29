@@ -51,8 +51,8 @@ correctly there if its profiles sit on the right entries.
 
 ## Scope rules as narrowly as the rule
 
-Most rules should use the tightest scope that fits, usually `parent`, `unit`, or
-`model` rather than `force` or `roster`. A scope wider than the rule needs is the
+Most rules should use the tightest scope that fits, usually `Parent`,
+`Type: Unit`, or `Type: Model` rather than `Force` or `Roster`. A scope wider than the rule needs is the
 usual cause of an option applying to the whole army instead of one unit. See
 [Scope & Context](/guide/concepts/scope).
 

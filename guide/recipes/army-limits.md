@@ -59,7 +59,7 @@ unit added. The game-size side always comes from the roster, whatever the
 constraint's scope; the scope only decides what is counted against it.
 
 The same works for a **minimum** percentage, such as "at least 25% on Core": use
-a `min` percentage constraint against `pts limit`.
+a `min` percentage constraint against `pts Limit`.
 
 To make the cap dynamic, for example raised when a particular unit or the general
 is present, change the limit with a modifier on the category link or root entry,

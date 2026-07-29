@@ -40,7 +40,7 @@ piece of it directly. But some of it needs no workaround at all:
 
 For the rest:
 
-- A link's own **name field does nothing** — to rename the entry for one use,
+- A link's own **name field does nothing** (inherited legacy behavior from BS) — to rename the entry for one use,
   put a `set` name modifier on the link.
 - Put a conditional modifier on the link for anything conditional, or for
   values the link cannot carry directly — changing a characteristic, or hiding

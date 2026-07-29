@@ -110,7 +110,7 @@ for the pattern, not something the UI displays.
 - recursive — the whole subtree below the scope
 - associated nodes — follow an [association](/guide/concepts/associations) to
   its target, with a set traversal depth
-- grouped associations — reach every member of an association group
+- grouped associations — reach every member of the group
 
 A useful way to hold it in your head: scope travels **up** to find a starting
 point, and `affects` travels **down** from there to the nodes that change. Add a

@@ -81,4 +81,4 @@ resolved at each place the entry is used, not where it is defined. A
 `Parent`-scoped rule on a shared weapon means "the unit that took this weapon",
 which will be different every time the weapon is linked.
 
-<!-- TODO: screenshot of the scope dropdown; per-model constraint example -->
+<!-- TODO: screenshot of the scope dropdown -->

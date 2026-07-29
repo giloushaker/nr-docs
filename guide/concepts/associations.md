@@ -35,6 +35,11 @@ A modifier can follow an association, with a set traversal depth, to change the
 selection on the other side. This is how a character grants an aura or buff to
 the unit it joined. The relative modifiers page covers the mechanics.
 
+When a query reaches across associations or grouped associations, the
+"and all child ..." flags (**And all child Selections**, **And all child
+Forces**) are not supported — leave them unchecked, or the query will not work
+as expected.
+
 <!-- TODO: worked example — a Leader that associates with Infantry, one
 association constraint, and a modifier that applies a buff to the joined unit;
 screenshots of the association panel -->
