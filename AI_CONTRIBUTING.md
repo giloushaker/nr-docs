@@ -17,6 +17,8 @@ Write for a reader whose first language may not be English.
   reader must find (Affects, No Index, Show tracker, Child ID). Never
   introduce a synonym for an established term: it is always the force, never
   "the detachment".
+- Conditions **pass** or **fail**; constraints are **met** or **not met**.
+  Never "broken", "satisfied", "valid", or "holds" for either.
 - Use the short common word: use (not utilize), before (not prior to), after
   (not subsequent to), about (not regarding), get (not obtain), show (not
   demonstrate), also (not additionally), help (not facilitate).

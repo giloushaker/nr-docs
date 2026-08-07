@@ -1,6 +1,6 @@
 # Modifiers
 
-A modifier changes a value when its conditions are met. Modifiers are how points,
+A modifier changes a value when its conditions pass. Modifiers are how points,
 stats, names, availability, and limits react to what is in the list. Taking an
 upgrade might raise a unit's cost, grant +1 to a stat, or unlock another option;
 each of those is a modifier.

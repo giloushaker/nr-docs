@@ -22,7 +22,7 @@ cleanest git history (see [Best Practices](/guide/best-practices#save-catalogues
 - Constraints: limits (min/max, exactly, percentages) on what can be taken.
 - Conditions: tests that turn other rules on or off.
 - Modifiers: changes to values (cost, name, characteristics) applied when
-  conditions are met.
+  conditions pass.
 
 A note on finding things in the editor: when these pages name a field or flag
 (Collective, Aliases, Show tracker, Affects...), it lives in the **right-hand

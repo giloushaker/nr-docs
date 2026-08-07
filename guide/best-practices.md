@@ -73,7 +73,7 @@ the player sees "X is not allowed with Y" instead of an option quietly
 disappearing. Reach for hiding only when the option genuinely does not belong in
 that context at all.
 
-A constraint can also carry a custom `message`, shown when it is broken, so the
+A constraint can also carry a custom `message`, shown when it is not met, so the
 player reads a plain-language reason instead of a generic limit error.
 
 ## Working in the editor

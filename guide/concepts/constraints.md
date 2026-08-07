@@ -2,7 +2,7 @@
 
 A constraint is a minimum or maximum limit on what can be taken. The
 builder checks constraints as the list is built and flags the roster when one is
-broken.
+not met.
 
 ## How a constraint is measured
 
@@ -47,7 +47,7 @@ unambiguous, not on everything.
 
 ## Custom messages <Badge type="tip" text="v1.3.31" />
 
-A constraint can carry a `message` shown when it is broken, so the player reads a
+A constraint can carry a `message` shown when it is not met, so the player reads a
 plain-language reason instead of a generic limit error.
 
 The message supports substitution placeholders written in `{...}`, filled in when

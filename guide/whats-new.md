@@ -45,7 +45,7 @@ finding tools you didn't know existed.
   scope, hides a configuration entry from the add-unit list once it is taken.
   → [Show or hide an option](/guide/recipes/conditional-options#hide-a-configuration-unit-once-its-added)
 - **Constraint messages** (v1.3.31, 2026-04): plain-language text with
-  placeholders shown when a limit is broken.
+  placeholders shown when a limit is not met.
   → [Constraints](/guide/concepts/constraints#custom-messages)
 - **Triangular and exponent modifiers** (v1.3.31, 2026-04): stepped-table
   scaling. → [Modifiers](/guide/concepts/modifiers#operation-types)
