@@ -4,9 +4,8 @@ export default defineConfig({
   title: "NewRecruit Docs",
   description:
     "Documentation for creating and publishing game data for NewRecruit",
-  // Served at https://<user>.github.io/nr-docs/. For a custom domain or a
-  // user/org root site, change this to "/".
-  base: "/nr-docs/",
+  // GitHub Pages serves under /nr-docs/, Cloudflare Pages at the root.
+  base: process.env.GITHUB_ACTIONS ? "/nr-docs/" : "/",
   srcExclude: ["research/**", "README.md", "CONTRIBUTING.md", "AI_CONTRIBUTING.md"],
   lastUpdated: true,
   sitemap: { hostname: "https://giloushaker.github.io/nr-docs/" },
