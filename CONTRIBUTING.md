@@ -1,58 +1,58 @@
 # Contributing
 
-These docs are for NewRecruit data authors. Every page on the site has an
-"Edit this page on GitHub" link — pull requests are welcome, from typo fixes
-to new recipes.
+These docs are for NewRecruit data authors, and contributions of any size are
+welcome and appreciated. Especially anything that makes starting out easier:
+if something confused you while learning, chances are it confuses everyone
+else too.
 
-To preview locally: `npm install`, then `npm run dev`.
+Spotted a typo or a wrong fact? Every page on the site has an "Edit this page
+on GitHub" link; a quick PR from there is fine.
 
-Facts about engine or editor behavior should be checked against the code
-(nuxt-nr / nr-editor) before being asserted; when in doubt, say so in the PR.
+Found something wrong or confusing but don't want to write the fix yourself?
+[Open an issue](https://github.com/giloushaker/nr-docs/issues) describing what
+confused you; that alone is useful.
 
-## Style guide
+Questions about contributing, or about how something in NewRecruit works,
+are welcome on the [NewRecruit Discord](https://discord.gg/cCtqGbugwb).
 
-Write for a reader whose first language may not be English.
+## Previewing locally
 
-### Terms
+```
+npm install
+npm run dev
+```
+
+## Adding a new page
+
+1. Create the `.md` file in the right folder under `guide/`:
+   - `guide/concepts/`: what a feature is and how it behaves
+   - `guide/recipes/`: how to build a specific rule, step by step
+   - `guide/advanced/`: niche or power-user topics
+   - `guide/reference/`: lists and lookup material
+2. Add it to the sidebar in `.vitepress/config.ts` (find the matching section
+   and copy a neighboring entry).
+3. If the section has an index page that lists its pages (recipes has
+   `guide/recipes/index.md`), add a link there too.
+4. Link to other pages with absolute paths: `/guide/concepts/modifiers`.
+
+If you're not sure a page idea fits, open an issue or a draft PR and ask.
+
+## Style
+
+Many readers are not native English speakers, so the docs favor plain, direct
+writing. The main things to aim for:
 
 - **One name for one thing.** Use the editor's UI label for anything the
-  reader must find (Affects, No Index, Show tracker, Child ID). Never
-  introduce a synonym for an established term — it is always the force, never
-  "the detachment".
-- Use the short common word: use (not utilize), before (not prior to), after
-  (not subsequent to), about (not regarding), get (not obtain), show (not
-  demonstrate), also (not additionally), help (not facilitate).
-- No marketing adjectives: seamless, robust, powerful, effortless.
+  reader must find (Affects, No Index, Show tracker, Child ID), and don't
+  switch between synonyms for an established term.
+- **Short common words.** Use, not utilize; before, not prior to; about, not
+  regarding; show, not demonstrate. Skip marketing words like seamless or
+  powerful.
+- **Active voice, concrete verbs.** "The builder hides constant selections",
+  not "constant selections are hidden by the builder". "Count the models",
+  not "perform a count of the models".
+- **Short sentences in instructions.** In recipes, steps, and
+  troubleshooting, keep step sentences to roughly 20 words and one action
+  each, with the condition first: "If the unit has model entries, put the
+  cost on the models." Concept pages can use normal explanatory prose.
 - American spelling, except domain terms with a fixed spelling (catalogue).
-
-### Sentences
-
-- Active voice: "the builder hides constant selections", not "constant
-  selections are hidden by the builder".
-- Use a verb for the action: "count the models", not "perform a count of the
-  models".
-- No stacked hedges: not "it is important to note that this may help to
-  improve X" — write "this improves X".
-- Keep sentences short in recipes, steps, and troubleshooting (about 20
-  words). Concept pages may use normal explanatory prose.
-- Prefer two sentences over a semicolon.
-- One topic per paragraph.
-
-### Procedures
-
-- Numbered steps, imperative form, one action per step.
-- Put the condition before the command: "If the unit has model entries, put
-  the cost on the models."
-
-### Voice
-
-Contractions are fine — these docs teach, they are not an aircraft manual.
-Keep the tone plain and direct, explain *why* a pattern works, and be honest
-about rough edges.
-
-### Before submitting
-
-- A step sentence over ~20 words? Split it.
-- The same thing named two ways? Pick one.
-- Passive voice with a known actor? Make it active.
-- A term the UI doesn't use? Replace it with the UI label, or define it once.
