@@ -15,6 +15,10 @@ that, each model is its own stack that the player adds and configures
 individually. These individually configurable stacks are also called
 **sub units** in release notes and discussion.
 
+Collective only affects display: it does not check that every model picks the
+same choice for a collective option; see
+[Known Limitations](/guide/limitations#collective-only-affects-display).
+
 ## Identical models: make everything collective
 
 If every model in a unit is the same, with no per-model choices, mark all of the

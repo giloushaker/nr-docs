@@ -17,6 +17,15 @@ selection entry and put the cost or constraint on that entry. This one catches
 people out often, so reach for a selection entry whenever something needs a
 price or a limit.
 
+## Collective only affects display
+
+The **collective** flag only changes how selections are shown; it validates
+nothing. When a unit mixes collective and non-collective selections, the
+models sit in individual stacks, and each stack can pick a different choice
+for a collective option. The roster is not flagged, even though a collective
+option is meant to be uniform across the unit. See
+[Collective](/guide/concepts/collective).
+
 ## A condition can't read a characteristic value
 
 Conditions can't read the numeric value of a characteristic. A rule can count how
