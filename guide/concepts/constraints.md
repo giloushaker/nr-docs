@@ -1,6 +1,6 @@
 # Constraints
 
-A constraint is a limit — a minimum or maximum — on what can be taken. The
+A constraint is a minimum or maximum limit on what can be taken. The
 builder checks constraints as the list is built and flags the roster when one is
 broken.
 
@@ -20,14 +20,14 @@ particular entry within the node itself rather than the node as a whole.
 
 The core constraints are `min` and `max` on a field, usually selections and
 sometimes points. A minimum makes the roster illegal until it is met; a maximum
-caps it. Percentages are supported — measure against the game size by picking
+caps it. Percentages are supported: measure against the game size by picking
 the cost type's **Limit** field (shown as `pts Limit` in the field dropdown)
 rather than the cost itself. For the common shapes (slots, ratios,
 duplicates, percentage caps) see [Army-wide limits](/guide/recipes/army-limits).
 
 ## The value -1
 
-A constraint value of `-1` means **no limit** — it is ignored, not treated as
+A constraint value of `-1` means **no limit**: it is ignored, not treated as
 minus one. If you genuinely need a negative value, set the constraint's
 `negative` flag.
 
@@ -39,7 +39,7 @@ error. This is what makes forced selections (equal `min` and `max`) safe: the
 builder fills them in itself instead of reporting an error the player has to
 fix.
 
-Automatic only matters when the constraint's **value can change** — a modifier
+Automatic only matters when the constraint's **value can change**: a modifier
 raising the min, or a repeat scaling it as the unit grows. A constraint whose
 value never changes is already satisfied when the unit is added; there is
 nothing left for automatic to resolve. Use it where the correct selection is
@@ -53,16 +53,16 @@ plain-language reason instead of a generic limit error.
 The message supports substitution placeholders written in `{...}`, filled in when
 it is shown:
 
-- `{current}` — the current count in scope
-- `{value}` — the constraint's value (the limit as written)
-- `{total}` — the resolved limit, for example the points a percentage works out to
-- `{difference}` — how far the count is from the limit
-- `{of}` — the thing being counted
-- `{scope}` — the name of the scope
-- `{field}` — the field being counted (selections, points, and so on)
-- `{%}` — a percent sign when the constraint is a percentage
+- `{current}`: the current count in scope
+- `{value}`: the constraint's value (the limit as written)
+- `{total}`: the resolved limit, for example the points a percentage works out to
+- `{difference}`: how far the count is from the limit
+- `{of}`: the thing being counted
+- `{scope}`: the name of the scope
+- `{field}`: the field being counted (selections, points, and so on)
+- `{%}`: a percent sign when the constraint is a percentage
 - `{self}`, `{parent}`, `{group}`, `{unit}`, `{model}`, `{roster}` and other
-  scope names — replaced with the matching node's name
-- `{<id>}` — any entry or field id, replaced with its name
+  scope names, replaced with the matching node's name
+- `{<id>}`: any entry or field id, replaced with its name
 
 Text wrapped in `**double asterisks**` is highlighted, and line breaks are kept.

@@ -37,7 +37,7 @@ the unit it joined. The relative modifiers page covers the mechanics.
 
 When a query reaches across associations or grouped associations, the
 "and all child ..." flags (**And all child Selections**, **And all child
-Forces**) are not supported — leave them unchecked, or the query will not work
+Forces**) are not supported: leave them unchecked, or the query will not work
 as expected.
 
 <!-- TODO: worked example — a Leader that associates with Infantry, one

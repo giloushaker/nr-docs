@@ -17,8 +17,8 @@ constraint sees them.
 
 ## Category slots (minimums and maximums)
 
-Games that build an army from role slots — like 2 to 6 Troops, 0 to 3 Elites, at
-least 1 HQ — put `min` and `max` constraints on the category in the force. A
+Games that build an army from role slots (like 2 to 6 Troops, 0 to 3 Elites, at
+least 1 HQ) put `min` and `max` constraints on the category in the force. A
 minimum makes the army illegal until it is met; a maximum caps the slot. This is
 the usual battlefield-role structure.
 
@@ -50,7 +50,7 @@ that category in the roster, for example `max 50%`.
 A percentage is measured against one of two things: the points **currently
 spent** in the roster, or the roster's **cost limit**, meaning the game size the
 player set (1000, 2000, and so on). The constraint's field selects which: each
-cost type has a limit variant in the field dropdown — `pts Limit` measures
+cost type has a limit variant in the field dropdown; `pts Limit` measures
 against the cost limit, plain `pts` measures against current spend.
 
 Use `pts Limit`. "Max 50% on Elites" means half the game size. With `pts` it
@@ -68,12 +68,12 @@ gated on a condition that tests for that unit.
 ## Notes
 
 - A **category entry can carry a cost** that applies when the category is linked
-  into a force — useful for a per-slot or per-detachment fee.
+  into a force, useful for a per-slot or per-detachment fee.
 - Keep army-specific categories in the catalogue and only truly shared ones in
   the game system. Putting every category in the system file makes limits harder
   to reason about.
-- For constraint mechanics — `automatic`, the `-1` = no-limit value, custom
-  messages — see [Constraints](/guide/concepts/constraints).
+- For constraint mechanics: `automatic`, the `-1` = no-limit value, custom
+  messages; see [Constraints](/guide/concepts/constraints).
 - A limit that should stop an illegal build but still let the player see the
   entries is usually better as a constraint than as a hide; see
   [Show or hide an option](/guide/recipes/conditional-options).

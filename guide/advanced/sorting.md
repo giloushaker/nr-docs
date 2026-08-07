@@ -27,15 +27,15 @@ children from a small configuration. Each line is one rule, and rules stack: the
 
 **Sort keys** (order everything by a value):
 
-- `name` — alphabetical by name.
-- `cost:<name>` — by the value of that cost, ascending. For points this is
+- `name`: alphabetical by name.
+- `cost:<name>`: by the value of that cost, ascending. For points this is
   usually `cost:points`.
 
 **Grouping conditions** (pull matching entries to the top):
 
-- `type:group`, `type:entry` — groups first, or entries first.
-- `type:model`, `type:unit`, `type:upgrade` — a specific entry type first.
-- `name:/regex/` — names matching the regular expression first. Combine it with
+- `type:group`, `type:entry`: groups first, or entries first.
+- `type:model`, `type:unit`, `type:upgrade`: a specific entry type first.
+- `name:/regex/`: names matching the regular expression first. Combine it with
   another rule using `&`, for example `type:entry & name:/^Sergeant/`.
 
 ### Examples

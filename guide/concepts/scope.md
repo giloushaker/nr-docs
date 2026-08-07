@@ -60,7 +60,7 @@ same parent so one can see the other.
 ## Type scopes
 
 `Force` and `Roster` stop at structural nodes. A type scope instead walks up to
-the nearest node of a chosen kind — in the scope dropdown these are `Type: Unit`,
+the nearest node of a chosen kind; in the scope dropdown these are `Type: Unit`,
 `Type: Model`, `Type: Model or Unit`, `Type: Upgrade`, `Entry & Type: Not
 Upgrade`, and `Root Entry`.
 

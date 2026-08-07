@@ -46,7 +46,7 @@ Building the tree correctly is what makes exports come out right.
 
 The same applies to third-party tools. [YellowScribe](https://yellowscribe.link/)
 imports a NewRecruit list into Tabletop Simulator, reading the datasheet output to
-build the models and their stat tooltips — so a homebrew unit only comes through
+build the models and their stat tooltips, so a homebrew unit only comes through
 correctly there if its profiles sit on the right entries.
 
 ## Scope rules as narrowly as the rule
@@ -80,7 +80,7 @@ player reads a plain-language reason instead of a generic limit error.
 
 A few operations that make editing faster:
 
-- **Move To** — right-click a node to relocate it, for example into Shared
+- **Move To:** right-click a node to relocate it, for example into Shared
   Entries (see above).
 - **Ctrl+click** to select multiple nodes, then copy, paste, or move them
   together.

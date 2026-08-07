@@ -7,12 +7,12 @@ matches what other authors expect.
 
 A few terms used throughout:
 
-- **Shared entry** — a definition kept once and reused by [link](/guide/concepts/links).
-- **Model entry** — a selection entry of type `model`, one per distinct kind of
+- **Shared entry:** a definition kept once and reused by [link](/guide/concepts/links).
+- **Model entry:** a selection entry of type `model`, one per distinct kind of
   model in a unit.
-- **Group** — a selection group that holds a set of choices, with `min`/`max`
+- **Group:** a selection group that holds a set of choices, with `min`/`max`
   controlling how many can be picked.
-- **Upgrade entry** — a selection entry of type `upgrade`, used for options and
+- **Upgrade entry:** a selection entry of type `upgrade`, used for options and
   for the per-model increments that scale points.
 
 ## The recipes

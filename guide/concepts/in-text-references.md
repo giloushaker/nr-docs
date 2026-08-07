@@ -8,7 +8,7 @@ names you give things, and the ones you exclude, control what gets linked.
 ## Aliases
 
 A node is matched by its name. To also match other spellings or short forms, fill
-in its **Aliases** field — a list of alternative names. Text matching any alias
+in its **Aliases** field, a list of alternative names. Text matching any alias
 links to the node. Use this for abbreviations or a rule that gets referred to by more than
 one name.
 

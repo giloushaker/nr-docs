@@ -14,7 +14,7 @@ Usually one of the links between the unit and the force is missing:
 - The unit is not under **Root Selection Entries**, or the root link is missing,
   so nothing references it.
 
-If the chain checks out, the unit (or its root link) may simply be **hidden** —
+If the chain checks out, the unit (or its root link) may simply be **hidden**:
 the hidden flag set on it, or a hide modifier's condition firing when you
 didn't expect it to.
 
@@ -49,8 +49,8 @@ then open the browser's dev tools console (in Chrome, More tools → Developer
 tools → Console). Assign `let state = $debugOption.state` and the console
 autocompletes the node's properties. Two useful calls:
 
-- `state.print_modifiers()` — the modifiers applied to the node
-- `state.print_extra_constraints()` — the constraints applied to it
+- `state.print_modifiers()`: the modifiers applied to the node
+- `state.print_extra_constraints()`: the constraints applied to it
 
 This shows what the engine actually computed, which usually points at the wrong
 scope, the missing recurse flag, or a condition that never matched.
@@ -93,12 +93,12 @@ so the option is shown rather than hidden when it applies.
 
 ## A mandatory option doesn't show ("the sergeant is missing")
 
-The builder hides **constant** selections — options the player has no decision
+The builder hides **constant** selections, options the player has no decision
 to make about. A selection is constant when its amount is forced by equal `min`
 and `max` constraints (in parent, not `-1`) and everything beneath it is
 constant too. A mandatory squad leader with `min 1`, `max 1` and no choices of
 its own is the classic case: it is still in the unit, still counted, priced,
-and exported — just not shown as an option.
+and exported, just not shown as an option.
 
 Players can reveal these from the unit's menu with **Show Constant Options**.
 Nothing is wrong with the data; if you want the entry to always be visible,

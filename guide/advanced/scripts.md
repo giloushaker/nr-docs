@@ -39,10 +39,10 @@ or `[node, string][]`. String output renders as HTML.
 
 ## What scripts can use
 
-- `$store` — interact with the editor. The available actions are in
+- `$store`: interact with the editor. The available actions are in
   [editorStore.ts](https://github.com/giloushaker/nr-editor/blob/master/stores/editorStore.ts).
   It is also available in the browser console.
-- `$node` — read and write local files.
+- `$node`: read and write local files.
 
 Example scripts (written in TypeScript, though only JS is supported for your own)
 live in the editor's [default-scripts](https://github.com/giloushaker/nr-editor/tree/master/default-scripts).
@@ -51,7 +51,7 @@ If a script needs imports, bundle them into one `.js` file with rollup or webpac
 ## Paste hooks
 
 A script can intercept pasted text by exporting a `hooks.paste` handler. This is
-how you build a custom importer — paste a block of stat-line or rules text and
+how you build a custom importer: paste a block of stat-line or rules text and
 turn it into entries. The shipped The Old World paste scripts do exactly this.
 
 ```js

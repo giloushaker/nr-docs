@@ -87,9 +87,9 @@ without a link, is a separate step: ask on the
 
 A system is expected to roughly meet these before it is listed:
 
-- **Maintained** — kept up to date as the game's rules and points change.
-- **In English** — the built-in list is English.
-- **Not a homebrew of an existing system** — a variant or house-rules fork of a
+- **Maintained:** kept up to date as the game's rules and points change.
+- **In English:** the built-in list is English.
+- **Not a homebrew of an existing system:** a variant or house-rules fork of a
   game already covered belongs as its own shared repository, not a second entry
   in the list. New games and original systems are fine.
 

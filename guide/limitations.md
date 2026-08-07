@@ -11,7 +11,7 @@ inside the group instead.
 ## Rules and profiles can't carry costs or constraints
 
 Constraints can sit on selection entries, groups, forces, and categories, and
-costs on entries, forces, and categories — but a rule or a profile can't have
+costs on entries, forces, and categories, but a rule or a profile can't have
 either directly. If you need a cost or a limit tied to a rule, wrap it in a
 selection entry and put the cost or constraint on that entry. This one catches
 people out often, so reach for a selection entry whenever something needs a
@@ -25,7 +25,7 @@ such as a model's Wounds or Strength.
 
 ## Complex maths is awkward
 
-Condition groups can do arithmetic — add, multiply, min/max, and comparisons —
+Condition groups can do arithmetic (add, multiply, min/max, and comparisons),
 so simple calculations and checks are possible; see
 [Condition-Group Maths](/guide/advanced/condition-maths). But there is no easy
 way to express anything complex: multi-step formulas are fiddly to assemble and

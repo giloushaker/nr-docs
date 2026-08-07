@@ -40,10 +40,10 @@ piece of it directly. But some of it needs no workaround at all:
 
 For the rest:
 
-- A link's own **name field does nothing** (inherited legacy behavior from BS) — to rename the entry for one use,
+- A link's own **name field does nothing** (inherited legacy behavior from BS): to rename the entry for one use,
   put a `set` name modifier on the link.
 - Put a conditional modifier on the link for anything conditional, or for
-  values the link cannot carry directly — changing a characteristic, or hiding
+  values the link cannot carry directly: changing a characteristic, or hiding
   an option that comes from the definition.
 - Or split the definition into smaller shared pieces and link only the parts
   you want, rather than one large entry you wish you could edit.
@@ -64,14 +64,14 @@ The rule of thumb for where things live: the **game system** holds what every
 catalogue needs (cost types, profile types, categories, forces); a **library**
 holds what several factions share; a **catalogue** holds one faction's content.
 One direction to keep in mind: when authoring, a library cannot reference
-specific entries that live in the catalogues importing it — it doesn't know
+specific entries that live in the catalogues importing it; it doesn't know
 them. At runtime its rules resolve where they are used, so scope- or
 category-based conditions on a library entry still count the importing
 roster's selections normally.
 
 ## Seeing what links to what
 
-Right-click an entry and choose **References** (the item shows the count) — the
+Right-click an entry and choose **References** (the item shows the count); the
 right-hand panel then lists every place the entry is used, and you can follow a
 link to jump to its target. The panel shows two lists: structural links, and
 uses from conditions, constraints, modifiers, and repeats. The reference count

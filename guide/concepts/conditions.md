@@ -9,11 +9,11 @@ the unit has a banner" is a modifier gated on a condition.
 A condition counts or tests something in a scope and compares it to a value. Its
 parts:
 
-- **Scope** — where to look. See [Scope & Context](/guide/concepts/scope).
-- **What it counts** — usually selections of a given entry or category, but it
+- **Scope:** where to look. See [Scope & Context](/guide/concepts/scope).
+- **What it counts:** usually selections of a given entry or category, but it
   can also read forces, associations, a points total, or the roster's cost limit
-- **Comparison and value** — the test and the number, for example "at least 1".
-- **"and all child selections"** — recurse below the scope, needed when the
+- **Comparison and value:** the test and the number, for example "at least 1".
+- **"and all child selections":** recurse below the scope, needed when the
   things being counted are nested. See [Scope](/guide/concepts/scope).
 
 ## Condition types
@@ -35,19 +35,19 @@ parts:
 
 A condition group holds several conditions and combines them:
 
-- `and` — all must pass
-- `or` — any must pass
-- `not` — not all pass (for a single condition, plain negation; with several,
+- `and`: all must pass
+- `or`: any must pass
+- `not`: not all pass (for a single condition, plain negation; with several,
   it fails only when every one passes)
-- `count` — a number of the child conditions pass, with a `min`/`max`
+- `count`: a number of the child conditions pass, with a `min`/`max`
 
 Groups can nest, so you can build "A and (B or C)".
 
 Groups can also compute and compare numbers, with types like `add`, `subtract`,
 `multiply`, `divide`, `modulo`, `power`, `min`, and `max`, tested with `greater`,
-`less`, `equal`, and so on. Simple calculations and comparisons work this way —
-see [Condition-Group Maths](/guide/advanced/condition-maths) for a worked
-example — but anything beyond that is awkward to build; see
+`less`, `equal`, and so on. Simple calculations and comparisons work this way
+(see [Condition-Group Maths](/guide/advanced/condition-maths) for a worked
+example), but anything beyond that is awkward to build; see
 [Known Limitations](/guide/limitations#complex-maths-is-awkward).
 
 ## Local condition groups
@@ -63,5 +63,5 @@ matching target.
 
 The `before` condition works only inside a local condition group, where it tests
 an instance's position in the repeat. This is what lets a rule apply from a
-certain instance onwards — for example, making the third and later of a unit cost
+certain instance onwards: for example, making the third and later of a unit cost
 more than the first two.

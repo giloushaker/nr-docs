@@ -1,7 +1,7 @@
 # Supported Systems
 
 A snapshot of the game systems available in NewRecruit and the GitHub repository
-each loads from. Useful as reference examples — open one in the editor to see how
+each loads from. Useful as reference examples: open one in the editor to see how
 a maintained system is built.
 
 ::: tip Snapshot

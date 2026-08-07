@@ -16,9 +16,9 @@ Put the cost on the models, not the unit:
 - A model entry for the basic trooper, with a `min`/`max in parent` constraint
   for the allowed unit size.
 - A flat cost on that model entry. A model's cost is multiplied by its amount
-  automatically, so 10 models at 10 pts cost 100 — no modifier needed.
+  automatically, so 10 models at 10 pts cost 100; no modifier needed.
 
-For an upgrade priced per model — a banner that costs 2 pts per body, say — put
+For an upgrade priced per model (a banner that costs 2 pts per body, say), put
 an increment-cost modifier on the **upgrade** with a repeat of "1 per model in
 parent"; the repeat scales the increment by the model count. Do not put that
 repeat on the model entry itself: a model's cost already scales with its

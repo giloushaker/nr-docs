@@ -59,7 +59,7 @@ Publishing your data, and editing an existing system, both use a normal git
 workflow, so install one way to work with git:
 
 - [Git for Windows](https://git-scm.com/download/win)
-- [GitHub Desktop](https://desktop.github.com/) — friendlier if you're new to git
+- [GitHub Desktop](https://desktop.github.com/): friendlier if you're new to git
 - Or the git client built into an IDE
 
 You also need a [GitHub](https://github.com) account to host and publish your

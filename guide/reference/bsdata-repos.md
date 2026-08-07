@@ -4,7 +4,7 @@
 game data. It is **not required**: NewRecruit loads data from any GitHub
 repository, so you can host your own wherever you like. BSData is simply one place
 a lot of data happens to live, and its repositories are useful as **reference
-examples** — real, maintained data you can open in the NR editor to see how
+examples**: real, maintained data you can open in the NR editor to see how
 established systems model their rules.
 
 ::: tip Browse the live list
@@ -14,7 +14,7 @@ This snapshot will drift. Browse the current set at
 
 ## Game data repos worth studying
 
-Larger, actively-maintained systems make the best reference material — they've
+Larger, actively-maintained systems make the best reference material: they've
 hit the edge cases you'll hit. Sorted roughly by popularity/activity:
 
 | Repo | Game |

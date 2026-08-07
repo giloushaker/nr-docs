@@ -9,7 +9,7 @@ constraints. At the end you load it in the builder and see it work.
 Open the [NR Data Editor](https://github.com/giloushaker/nr-editor/releases),
 select `Create System`, and enter a name.
 
-The system and its catalogues live together as files in one folder — your
+The system and its catalogues live together as files in one folder, your
 **working folder** (set it with **Set Working Folder** if the editor asks).
 Remember where it is: testing in the builder and publishing with git both
 point at this same folder later.
@@ -42,7 +42,7 @@ Right click `Root Selection Entries` and select `Entry` to add a unit, and set
 its **Type** to `unit`.
 
 Then right click the unit and add a child `Entry` for each distinct kind of
-model in it, with Type set to `model` — even a single-model unit gets a model
+model in it, with Type set to `model`; even a single-model unit gets a model
 entry. The models are what the builder counts, prices, and tracks, and later
 steps put the size constraint and the stat line on them. The Type field is not
 cosmetic; see [entry types](/guide/concepts/scope#type-scopes).
@@ -87,7 +87,7 @@ See [Scope & Context](/guide/concepts/scope) for what a constraint counts.
 
 Points need a cost type. In the game system, under `Cost Types`, create one named
 `pts` (or `Points`). This is the currency the whole system uses. Its name is
-what players see next to every cost, so short is usual — and it names the
+what players see next to every cost, so short is usual, and it names the
 `pts Limit` field used in the next step.
 
 Set a cost on an entry by adding a cost of that type and a value. To make a unit
@@ -95,7 +95,7 @@ cost more as it grows, price the models rather than the unit; see
 [Points that scale per model](/guide/recipes/points-per-model).
 
 To give the game a default army size, set a `defaultCostLimit` on the cost
-type — it prefills the cost limit when a player creates a roster (they can
+type; it prefills the cost limit when a player creates a roster (they can
 still change it).
 
 ## 11. Add force limits

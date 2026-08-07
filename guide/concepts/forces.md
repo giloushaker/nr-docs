@@ -39,18 +39,18 @@ slot visible with its count and limits even while empty.
 
 Besides category links and child forces, a force entry can have:
 
-- **Constraints** — for example limiting how many of the force the roster may
+- **Constraints:** for example limiting how many of the force the roster may
   take.
-- **Costs** — a price for taking the force itself.
-- **Readme** — text shown to the player on the force, the place to explain how
+- **Costs:** a price for taking the force itself.
+- **Readme:** text shown to the player on the force, the place to explain how
   the detachment works and what it grants.
-- **Rules and profiles** — info attached to the force is displayed with it.
-- **Modifiers** — targeting its name, hidden flag, costs, constraints, readme,
+- **Rules and profiles:** info attached to the force is displayed with it.
+- **Modifiers:** targeting its name, hidden flag, costs, constraints, readme,
   or error/warning/info messages.
 
 ## Child forces
 
-Forces can nest: a parent force can offer **child forces** — sub-forces or
+Forces can nest. A parent force can offer **child forces**: sub-forces or
 allied detachments with their own slots, nested under a parent force that
 carries whatever unites them. Age of Sigmar 4 and Horus Heresy 3 use this
 structure. The section label ("Child Forces") can be renamed on the force
@@ -64,14 +64,14 @@ that; for choices that unlock content without adding a whole force, see
 ### Hiding child forces that don't belong
 
 Force entries are defined once in the game system, so by default every
-faction's parent force offers **every** child force — pick one faction and you
+faction's parent force offers **every** child force: pick one faction and you
 would still see the sub-forces belonging to all the others.
 
 To make a child force appear only for its own faction:
 
 1. Set the child force **hidden** by default.
 2. Add a modifier that sets hidden to false, gated on an instance-of condition
-   at `Primary Catalogue` scope matching that faction's catalogue — in words,
+   at `Primary Catalogue` scope matching that faction's catalogue; in words,
    "unhide when this force's selected catalogue is X".
 
 If the same child force sits under more than one parent force, add a condition
