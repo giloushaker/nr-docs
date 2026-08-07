@@ -56,10 +56,6 @@ export default defineConfig({
               link: "/guide/recipes/points-per-model",
             },
             {
-              text: "Optional squad models",
-              link: "/guide/recipes/optional-models",
-            },
-            {
               text: "Show or hide an option",
               link: "/guide/recipes/conditional-options",
             },

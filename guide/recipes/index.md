@@ -19,7 +19,6 @@ A few terms used throughout:
 
 - [Points that scale per model](/guide/recipes/points-per-model)
 - [Weapon options](/guide/recipes/weapon-options)
-- [Optional squad models](/guide/recipes/optional-models)
 - [Show or hide an option based on another choice](/guide/recipes/conditional-options)
 - [Sub-factions and allegiances](/guide/recipes/sub-factions)
 - [Army-wide limits](/guide/recipes/army-limits)
