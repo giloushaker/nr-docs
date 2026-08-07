@@ -7,7 +7,7 @@ export default defineConfig({
   // Served at https://<user>.github.io/nr-docs/. For a custom domain or a
   // user/org root site, change this to "/".
   base: "/nr-docs/",
-  srcExclude: ["research/**", "README.md", "CONTRIBUTING.md"],
+  srcExclude: ["research/**", "README.md", "CONTRIBUTING.md", "AI_CONTRIBUTING.md"],
   lastUpdated: true,
   sitemap: { hostname: "https://giloushaker.github.io/nr-docs/" },
   themeConfig: {
