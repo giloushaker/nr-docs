@@ -130,8 +130,7 @@ condition and the change becomes conditional, without copying the modifier onto
 every affected entry.
 
 Relative modifiers need **"and all child selections"** ticked to reach nested
-selections, even when the affected node has no children of its own. A relative
-modifier that stops working after an edit is often missing this.
+selections, even when the affected node has no children of its own.
 
 <!-- TODO: worked example — an upgrade granting +1 Attack to every model in its
 unit via affects: child selections, recursive; screenshot of the affects panel -->
