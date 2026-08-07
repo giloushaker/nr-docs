@@ -7,6 +7,10 @@ finding tools you didn't know existed.
 
 ## 2026
 
+- **Text-modifier tweaks** (v1.4.15, 2026-08): append/prepend can skip when
+  the text is already there ("unless present"), and replace with an empty
+  find-text fills in an empty value.
+  → [Modifiers](/guide/concepts/modifiers#operation-types)
 - **Show tracker on categories** (2026-07): always display a category with its
   count and limits, even while not having any available or selected units within ("Prime Elites 0/6").
   → [Army-wide limits](/guide/recipes/army-limits#category-slots-minimums-and-maximums)

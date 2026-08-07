@@ -32,8 +32,12 @@ Arithmetic, for numeric fields:
 
 Text, for the name and other text fields:
 
-- `append` / `prepend`: add text after or before, with an optional separator
-- `replace`: replace matched text, optionally only at a given position
+- `append` / `prepend`: add text after or before, with an optional separator.
+  The **unless present** flag (`skipIfPresent`) skips the modifier when the
+  text is already in the value.
+- `replace`: replace matched text, optionally only at a given position. If the
+  text to find is empty, it applies only when the whole value is empty, so it
+  can fill in an empty field.
 
 Availability and structure:
 
