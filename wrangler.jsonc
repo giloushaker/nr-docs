@@ -1,0 +1,10 @@
+{
+  "name": "nr-docs",
+  "compatibility_date": "2026-08-07",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": ".vitepress/dist"
+  }
+}
