@@ -1,18 +1,22 @@
 # Sorting
 
-By default the editor lists a group's children alphabetically. You can override
-that, either by hand or with a small sort configuration that applies a rule to
-every child at once.
+Two different orders are easy to mix up here:
 
-## Manual order
+- **The editor's display order.** The node tree sorts a group's children
+  alphabetically so they are easy to find. This is only the editor's view; it
+  changes nothing in the data.
+- **The data order.** How the children actually sit in the stored file. This
+  is the order that decides ties between
+  [modifiers of the same step](/guide/concepts/modifiers#when-modifiers-apply).
 
-Type a number in the **Position** field next to an entry's name to set its order;
-lower numbers come first. Some nodes can also be re-ordered by right-clicking.
+## Changing the data order
 
-**No Sorting** is a separate setting, an option in the sorting dropdown in the
-node-tree panel. It turns off the automatic alphabetical sort so you can order the
-underlying data by hand. That changes how entries sit in the stored file, which
-may or may not matter to you.
+Type a number in the **Position** field next to an entry's name; lower numbers
+come first. Some nodes can also be re-ordered by right-clicking.
+
+To see the data order while you arrange it, pick **No Sorting** in the sorting
+dropdown of the node-tree panel. The tree then stops sorting alphabetically
+and shows the children as they sit in the file.
 
 ## Sort configuration
 
