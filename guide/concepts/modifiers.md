@@ -71,11 +71,23 @@ profile, a rule, a force. The full set:
 ## When modifiers apply
 
 Without conditions a modifier always applies. With conditions it applies only
-when they pass. The operation type sets a fixed run order — set → append/prepend
-→ increment/arithmetic → floor/ceil → cumulative/replace — and within the same
-tier, modifiers run in data order. Hand-arranging (turn off sorting, see
-[Sorting](/guide/advanced/sorting)) therefore only decides ties between
-modifiers of the same tier; it cannot make an increment run before a set.
+when they pass.
+
+Modifiers run in the order they are listed, but first they are re-ordered by
+operation type into these steps:
+
+1. `set`, `add`, `remove`, `set-primary`, `unset-primary`
+2. `append`, `prepend`
+3. `increment`, `decrement` and the arithmetic operations (`multiply`, `divide`,
+   `modulo`, `power`, `exponent`, `triangular`)
+4. `floor`, `ceil`
+5. the cumulative operations and `replace`
+
+So a `set` always runs before an `increment`, no matter how the modifiers are
+arranged — the base value is set first, then adjusted, then clamped. Within the
+same step, the listed order is kept, so re-arranging modifiers (turn off
+sorting, see [Sorting](/guide/advanced/sorting)) only decides order between
+modifiers of the same step.
 
 ## Repeats
 
